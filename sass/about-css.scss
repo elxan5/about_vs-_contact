@@ -1,0 +1,397 @@
+$orange:#F57E57;
+$skyBlue:#18AFD3;
+$lightGray:#E5E5E5;
+$gray : rgb(134, 134, 134);
+
+$oswald: 'Oswald', sans-serif;
+.wrapper{
+	margin: 0 auto;
+	width: 960px;
+}
+.padLeft{
+  padding-left: 0;
+}
+.aboutUnderLine{
+            margin-bottom: 60px;
+            padding: 3px;
+            width: 80px;
+            background: $orange;
+          }
+body{
+  font-family: "Lato",Helvetica,Arial,sans-serif; 
+}
+.padding-rm{
+  padding: 0;
+}
+/*about start*/
+#about{
+  .aboutTop{
+  	padding-top: 35px;
+  	padding-bottom: 80px;
+    .container-fluid{
+      .container{
+        .row{
+           .aboutCall{
+             .col-md-3{
+                .iconPhone{
+                	padding: 12px 15px;
+                	font-size: 1.9em;
+                	border-radius: 100%;
+                	color:$skyBlue;
+                	background: $lightGray;
+                    }
+        	      }
+        	      .col-md-9{
+        	      	a{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color:#333333;
+        	      	display: inline-block;
+        	         }
+        	      }  
+        	   }
+        	 .aboutAdress{
+        	   .col-md-3{
+        	 	  .iconMap{
+	                    padding: 12px 18px;
+	                	font-size: 1.8em;
+	                	border-radius: 100%;
+	                	color:$skyBlue;
+	                	background: $lightGray;
+        	 		   }
+        	     	}
+        	     	  .col-md-9{
+        	      	a{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color:#333333;
+        	      	display: inline-block;
+        	         }
+        	      } 
+        	    }
+            }
+        }
+     }
+  }
+  /*end About TOP*/
+  /*start About content*/
+.aboutContent{
+	font-family: $oswald;
+	position: relative;
+	background: url(..//img/aboutSlide.jpg);
+	background-position: center;
+	background-size: cover;
+
+  .container-fluid{
+   .aboutNav{
+
+   	position: relative;
+   	top:-30px;
+     .container{
+       background: $skyBlue;
+       border-radius: 10px;
+      .row{
+      	.col-md-12{
+      		ul{
+      			margin:0;
+      			margin-left: -15px;
+      			li{
+      				&:nth-child(2){
+                  	background: #F57E57;
+                  } 
+                    display: inline-block;
+                    line-height: 100%;
+				    cursor: pointer;
+				    padding:15px 23px;
+				    font-size: 22px;
+				    
+	                 a{
+						text-decoration: none;
+						color:#F9FDFE;
+						font-size: 17px;
+						font-weight: 400;
+					}
+      			  }
+      		   }
+      	     }
+           }  
+         }
+       }
+       .container{
+       	 &:nth-child(2){
+       	 	color:#fff;
+       	 	ul{
+       	 		padding-bottom: 20px;
+       	 		letter-spacing: 0.04em;
+       	 		li{
+       	 			a{
+       	 				color:#fff;
+       	             }
+       	 			.iconArrow{
+       	 				color:$lightGray;
+       	 			}
+       	 		}
+       	 	}
+       		h1{
+         	   padding: 50px 0;
+         	   font-size: 80px;
+         	   font-weight:400; 
+         	   line-height:1.25;
+         	   letter-spacing: 0.04em;
+
+             }
+       	  }
+       }
+     }
+   }
+   /*end About content*/
+   /*about Us*/
+  .aboutUs{
+  	.container{
+  	  .row{
+  	     padding: 50px 0;
+  	     margin-bottom: 30px;
+  	  	
+         .col-md-8{
+           	.col-md-12{
+           	  h3{
+           	  	padding: 10px 0;
+
+           	   }
+           	    p{
+	          	color: $gray;
+    	        font-size: 15px;
+    	        line-height: 1.6;
+	          	letter-spacing: .3px;
+	          }
+           	 .aboutUnder{
+                padding:3px;
+   	        	width: 110px;
+	        	margin-bottom: 55px;
+	        	background: $orange;           	   
+	           }
+           	 }
+           }
+           .aboutScot{
+           	  h6{
+                color:#434445;
+            	padding-top: 20px;
+            	letter-spacing: 0.06em;
+            	font-size: 18px;
+                font-weight:600;
+             }
+             .col-md-4{
+
+             }
+             .col-md-8{
+             	h5{
+             		font-size: 18px;
+					      font-weight: 600;
+					       color:#18AFD3;
+             	}
+              em{
+                color:$gray;
+              }
+             	.fa-phone{
+                     font-size: 1.8em;
+                     color:#18AFD3;
+                     padding-top: 18px;
+ 					}
+ 					b{
+ 						font-size: 15px;
+ 					}
+               }
+               .medicalInfo{
+                 position: relative;
+                 top:10px;
+                 left: 15px;
+                 margin-bottom: 25px;
+                 font-size:15px;
+                 line-height: 22px;
+                 color:$gray;
+               }
+               .aboutBtn{
+                font-size: 16px;
+                background: $orange;
+                border: transparent;
+               	padding: 13px 20px;
+               	border-radius:30px;
+               }	
+           }
+  		}
+  	 }
+   }
+   .aboutAchievments{
+        padding: 30px 0;
+    .container-fluid{
+      .row{
+      .col-md-12{
+          background: #F1F3F9;
+          .col-md-5{
+            img{
+              height: 100%;
+            }
+          }
+        .col-md-7{
+          .awardBest{
+            padding-bottom: 52px;
+          }
+          h1{
+            color:#333333;
+            padding: 15px 0;
+          }
+          padding:65px 0;
+          padding-left: 100px;
+          
+          .col-md-3{
+            padding: 17px 0;
+             .faGrad{
+              padding: 17% 14%;
+            }
+            text-align: center;
+            span{
+              border: 2px solid #fff;
+              border-radius: 100%;
+              font-size: 1.9em;
+              padding: 17% 19.5%;
+              background: $orange;
+              color:white;
+            }
+
+          }
+          .col-md-9{
+              .starAward{
+                padding: 13px 0;
+              }
+            h5{
+                font-size: 21px;
+               line-height: 1.3em;
+               font-weight: 600;
+               color:$skyBlue;
+               
+             }
+          }
+        }
+
+      }
+    }
+   }
+ }
+ /*about Team*/
+   .aboutTeam{
+    font-family: $oswald;
+    .container-fluid {
+        padding-bottom:7%;
+      .container{
+       
+        .row{
+          .col-md-12{
+            .container{
+              text-align: center;
+              .aboutView{
+                background: $orange;
+                border:none;
+                padding:12px 35px; 
+                margin-top: 20px;
+                font-size: 18px;
+                border-radius: 25px;
+                &:hover{
+                  background: $skyBlue;
+
+                }
+              }
+            }
+              .row{
+                margin-bottom: 30px;
+                .col-md-3{
+                  .aboutTeamMember{
+                    background: $skyBlue;
+                    padding: 25px 30px;
+                    h5{
+                      font-weight: 700;
+                      font-size: 20px;
+                      color:#fff;
+                    }
+                    em{
+                      font-size: 14px;
+                      color:#fff;
+                      opacity: 0.8;
+                    }
+                  }
+                }
+              }
+            h1{
+              padding-top: 35px;
+              text-align: center;
+              font-weight: 400;
+              font-size: 3.3em;
+              color:#333333;
+            }
+            .aboutUnderLine{
+              position: relative;
+              top:10px;
+              left:46%;
+            }
+
+          }
+        }
+      }
+    }
+   }
+   /*end About TEam*/
+   /*star TEStimonials*/
+   .aboutTestimonials{
+    .container-fluid{
+      background: #F1F3F9;
+     .container{
+       .row{
+          .col-md-12{ 
+            text-align: center;
+            padding: 60px 0;
+            h1{
+
+           }
+            .aboutUnderLine{
+           left: 46%;
+           width: 100px;
+           margin:20px 0;
+           position: relative;
+           }
+        }
+      }
+        .row{
+          .col-md-4{
+            .col-md-2{
+              padding: 0 20px;
+                i{
+                  color:$orange;
+                }
+             }
+             .col-md-10{
+               em{
+                color:$gray;
+                font-weight: 500;
+                font-size: 16px;
+               }
+               .container-fluid {
+
+                  padding: 20px 0;
+                .col-md-8{
+                  h5{
+                    color:$skyBlue;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 0;
+                    padding: 3px 0;
+                  }
+                 }
+              }
+            }
+          }
+        }
+      }
+     }
+   }
+ }
+ 
+/*about end*/

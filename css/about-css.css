@@ -1,0 +1,244 @@
+.wrapper {
+  margin: 0 auto;
+  width: 960px; }
+
+.padLeft {
+  padding-left: 0; }
+
+.aboutUnderLine {
+  margin-bottom: 60px;
+  padding: 3px;
+  width: 80px;
+  background: #F57E57; }
+
+body {
+  font-family: "Lato",Helvetica,Arial,sans-serif; }
+
+.padding-rm {
+  padding: 0; }
+
+/*about start*/
+#about {
+  /*end About TOP*/
+  /*start About content*/
+  /*end About content*/
+  /*about Us*/
+  /*about Team*/
+  /*end About TEam*/
+  /*star TEStimonials*/ }
+  #about .aboutTop {
+    padding-top: 35px;
+    padding-bottom: 80px; }
+    #about .aboutTop .container-fluid .container .row .aboutCall .col-md-3 .iconPhone {
+      padding: 12px 15px;
+      font-size: 1.9em;
+      border-radius: 100%;
+      color: #18AFD3;
+      background: #E5E5E5; }
+    #about .aboutTop .container-fluid .container .row .aboutCall .col-md-9 a {
+      font-size: 15px;
+      line-height: 25px;
+      color: #333333;
+      display: inline-block; }
+    #about .aboutTop .container-fluid .container .row .aboutAdress .col-md-3 .iconMap {
+      padding: 12px 18px;
+      font-size: 1.8em;
+      border-radius: 100%;
+      color: #18AFD3;
+      background: #E5E5E5; }
+    #about .aboutTop .container-fluid .container .row .aboutAdress .col-md-9 a {
+      font-size: 15px;
+      line-height: 25px;
+      color: #333333;
+      display: inline-block; }
+  #about .aboutContent {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    background: url(..//img/aboutSlide.jpg);
+    background-position: center;
+    background-size: cover; }
+    #about .aboutContent .container-fluid .aboutNav {
+      position: relative;
+      top: -30px; }
+      #about .aboutContent .container-fluid .aboutNav .container {
+        background: #18AFD3;
+        border-radius: 10px; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul {
+          margin: 0;
+          margin-left: -15px; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li {
+            display: inline-block;
+            line-height: 100%;
+            cursor: pointer;
+            padding: 15px 23px;
+            font-size: 22px; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li:nth-child(2) {
+              background: #F57E57; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li a {
+              text-decoration: none;
+              color: #F9FDFE;
+              font-size: 17px;
+              font-weight: 400; }
+    #about .aboutContent .container-fluid .container:nth-child(2) {
+      color: #fff; }
+      #about .aboutContent .container-fluid .container:nth-child(2) ul {
+        padding-bottom: 20px;
+        letter-spacing: 0.04em; }
+        #about .aboutContent .container-fluid .container:nth-child(2) ul li a {
+          color: #fff; }
+        #about .aboutContent .container-fluid .container:nth-child(2) ul li .iconArrow {
+          color: #E5E5E5; }
+      #about .aboutContent .container-fluid .container:nth-child(2) h1 {
+        padding: 50px 0;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.04em; }
+  #about .aboutUs .container .row {
+    padding: 50px 0;
+    margin-bottom: 30px; }
+    #about .aboutUs .container .row .col-md-8 .col-md-12 h3 {
+      padding: 10px 0; }
+    #about .aboutUs .container .row .col-md-8 .col-md-12 p {
+      color: #868686;
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: .3px; }
+    #about .aboutUs .container .row .col-md-8 .col-md-12 .aboutUnder {
+      padding: 3px;
+      width: 110px;
+      margin-bottom: 55px;
+      background: #F57E57; }
+    #about .aboutUs .container .row .aboutScot h6 {
+      color: #434445;
+      padding-top: 20px;
+      letter-spacing: 0.06em;
+      font-size: 18px;
+      font-weight: 600; }
+    #about .aboutUs .container .row .aboutScot .col-md-8 h5 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #18AFD3; }
+    #about .aboutUs .container .row .aboutScot .col-md-8 em {
+      color: #868686; }
+    #about .aboutUs .container .row .aboutScot .col-md-8 .fa-phone {
+      font-size: 1.8em;
+      color: #18AFD3;
+      padding-top: 18px; }
+    #about .aboutUs .container .row .aboutScot .col-md-8 b {
+      font-size: 15px; }
+    #about .aboutUs .container .row .aboutScot .medicalInfo {
+      position: relative;
+      top: 10px;
+      left: 15px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      line-height: 22px;
+      color: #868686; }
+    #about .aboutUs .container .row .aboutScot .aboutBtn {
+      font-size: 16px;
+      background: #F57E57;
+      border: transparent;
+      padding: 13px 20px;
+      border-radius: 30px; }
+  #about .aboutAchievments {
+    padding: 30px 0; }
+    #about .aboutAchievments .container-fluid .row .col-md-12 {
+      background: #F1F3F9; }
+      #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-5 img {
+        height: 100%; }
+      #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 {
+        padding: 65px 0;
+        padding-left: 100px; }
+        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .awardBest {
+          padding-bottom: 52px; }
+        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 h1 {
+          color: #333333;
+          padding: 15px 0; }
+        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-3 {
+          padding: 17px 0;
+          text-align: center; }
+          #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-3 .faGrad {
+            padding: 17% 14%; }
+          #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-3 span {
+            border: 2px solid #fff;
+            border-radius: 100%;
+            font-size: 1.9em;
+            padding: 17% 19.5%;
+            background: #F57E57;
+            color: white; }
+        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-9 .starAward {
+          padding: 13px 0; }
+        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-9 h5 {
+          font-size: 21px;
+          line-height: 1.3em;
+          font-weight: 600;
+          color: #18AFD3; }
+  #about .aboutTeam {
+    font-family: "Oswald", sans-serif; }
+    #about .aboutTeam .container-fluid {
+      padding-bottom: 7%; }
+      #about .aboutTeam .container-fluid .container .row .col-md-12 .container {
+        text-align: center; }
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView {
+          background: #F57E57;
+          border: none;
+          padding: 12px 35px;
+          margin-top: 20px;
+          font-size: 18px;
+          border-radius: 25px; }
+          #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView:hover {
+            background: #18AFD3; }
+      #about .aboutTeam .container-fluid .container .row .col-md-12 .row {
+        margin-bottom: 30px; }
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember {
+          background: #18AFD3;
+          padding: 25px 30px; }
+          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember h5 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff; }
+          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember em {
+            font-size: 14px;
+            color: #fff;
+            opacity: 0.8; }
+      #about .aboutTeam .container-fluid .container .row .col-md-12 h1 {
+        padding-top: 35px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 3.3em;
+        color: #333333; }
+      #about .aboutTeam .container-fluid .container .row .col-md-12 .aboutUnderLine {
+        position: relative;
+        top: 10px;
+        left: 46%; }
+  #about .aboutTestimonials .container-fluid {
+    background: #F1F3F9; }
+    #about .aboutTestimonials .container-fluid .container .row .col-md-12 {
+      text-align: center;
+      padding: 60px 0; }
+      #about .aboutTestimonials .container-fluid .container .row .col-md-12 .aboutUnderLine {
+        left: 46%;
+        width: 100px;
+        margin: 20px 0;
+        position: relative; }
+    #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-2 {
+      padding: 0 20px; }
+      #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-2 i {
+        color: #F57E57; }
+    #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-10 em {
+      color: #868686;
+      font-weight: 500;
+      font-size: 16px; }
+    #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-10 .container-fluid {
+      padding: 20px 0; }
+      #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-10 .container-fluid .col-md-8 h5 {
+        color: #18AFD3;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        padding: 3px 0; }
+
+/*about end*/
+
+/*# sourceMappingURL=about-css.css.map */
