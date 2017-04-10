@@ -2,6 +2,9 @@
   margin: 0 auto;
   width: 960px; }
 
+.paddingAdd {
+  padding-left: 60px; }
+
 .padLeft {
   padding-left: 0; }
 
@@ -12,10 +15,13 @@
   background: #F57E57; }
 
 body {
-  font-family: "Lato",Helvetica,Arial,sans-serif; }
+  font-family: "Lato", Helvetica, Arial, sans-serif; }
 
 .padding-rm {
   padding: 0; }
+
+.aboutLeft {
+  float: left; }
 
 /*about start*/
 #about {
@@ -65,13 +71,16 @@ body {
         border-radius: 10px; }
         #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul {
           margin: 0;
-          margin-left: -15px; }
+          margin-left: -15px;
+          list-style: none; }
           #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li {
-            display: inline-block;
+            float: left;
             line-height: 100%;
             cursor: pointer;
-            padding: 15px 23px;
+            padding: 16.2px 23px;
             font-size: 22px; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li:hover {
+              background: #F57E57; }
             #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li:nth-child(2) {
               background: #F57E57; }
             #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li a {
@@ -176,68 +185,155 @@ body {
           color: #18AFD3; }
   #about .aboutTeam {
     font-family: "Oswald", sans-serif; }
-    #about .aboutTeam .container-fluid {
-      padding-bottom: 7%; }
-      #about .aboutTeam .container-fluid .container .row .col-md-12 .container {
-        text-align: center; }
-        #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView {
-          background: #F57E57;
-          border: none;
-          padding: 12px 35px;
-          margin-top: 20px;
-          font-size: 18px;
-          border-radius: 25px; }
-          #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView:hover {
-            background: #18AFD3; }
-      #about .aboutTeam .container-fluid .container .row .col-md-12 .row {
-        margin-bottom: 30px; }
-        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember {
-          background: #18AFD3;
-          padding: 25px 30px; }
-          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember h5 {
-            font-weight: 700;
-            font-size: 20px;
-            color: #fff; }
-          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember em {
-            font-size: 14px;
-            color: #fff;
-            opacity: 0.8; }
-      #about .aboutTeam .container-fluid .container .row .col-md-12 h1 {
-        padding-top: 35px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 3.3em;
-        color: #333333; }
-      #about .aboutTeam .container-fluid .container .row .col-md-12 .aboutUnderLine {
-        position: relative;
-        top: 10px;
-        left: 46%; }
+    #about .aboutTeam .container-fluid .container .aboutAllView {
+      transition: .25s;
+      position: relative;
+      top: 0; }
+    #about .aboutTeam .container-fluid .container .aboutProfile {
+      cursor: pointer;
+      background: #F57E57;
+      padding: 20px 30px;
+      position: absolute;
+      bottom: -50px;
+      width: 100%; }
+      #about .aboutTeam .container-fluid .container .aboutProfile h5 {
+        margin: 0;
+        color: white; }
+    #about .aboutTeam .container-fluid .container .row .col-md-12 .container {
+      text-align: center; }
+      #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView {
+        background: #F57E57;
+        border: none;
+        padding: 13px 35px;
+        margin: 60px 0;
+        font-size: 18px;
+        border-radius: 25px; }
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView:hover {
+          background: #18AFD3; }
+    #about .aboutTeam .container-fluid .container .row .col-md-12 .row {
+      margin-bottom: 30px; }
+      #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember {
+        background: #18AFD3;
+        padding: 30px 30px;
+        position: relative; }
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember h5 {
+          font-weight: 700;
+          font-size: 20px;
+          color: #fff;
+          pointer-events: none; }
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember em {
+          font-size: 14px;
+          color: #fff;
+          opacity: 0.8;
+          pointer-events: none; }
+    #about .aboutTeam .container-fluid .container .row .col-md-12 h1 {
+      padding-top: 35px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 3.3em;
+      color: #333333; }
+    #about .aboutTeam .container-fluid .container .row .col-md-12 .aboutUnderLine {
+      position: relative;
+      top: 10px;
+      left: 46%; }
   #about .aboutTestimonials .container-fluid {
-    background: #F1F3F9; }
+    background: #F1F3F9;
+    padding-bottom: 50px; }
+    #about .aboutTestimonials .container-fluid .container .dotItem .col-md-12 {
+      text-align: center; }
+      #about .aboutTestimonials .container-fluid .container .dotItem .col-md-12 .dot {
+        cursor: pointer;
+        display: inline-block;
+        padding: 2px 5px; }
+        #about .aboutTestimonials .container-fluid .container .dotItem .col-md-12 .dot i {
+          color: #18AFD3;
+          pointer-events: none; }
     #about .aboutTestimonials .container-fluid .container .row .col-md-12 {
       text-align: center;
-      padding: 60px 0; }
+      padding: 80px 0; }
       #about .aboutTestimonials .container-fluid .container .row .col-md-12 .aboutUnderLine {
         left: 46%;
         width: 100px;
         margin: 20px 0;
         position: relative; }
-    #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-2 {
-      padding: 0 20px; }
-      #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-2 i {
-        color: #F57E57; }
-    #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-10 em {
-      color: #868686;
+    #about .aboutTestimonials .container-fluid .container .row .testiPeople {
+      min-height: 200px;
+      position: relative;
+      display: inline-block;
+      width: 100%; }
+      #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-2 {
+        padding: 0 20px; }
+        #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-2 i {
+          color: #F57E57; }
+      #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-10 em {
+        color: #868686;
+        font-weight: 400;
+        font-size: 16px; }
+      #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-10 .container-fluid {
+        padding: 20px 0; }
+        #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-10 .container-fluid .col-md-9 h5 {
+          color: #18AFD3;
+          font-size: 20px;
+          font-weight: 600;
+          margin: 0;
+          padding: 3px 0; }
+  #about .aboutFooter {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    background: #038EAF;
+    padding-top: 4%; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 .container-fluid ul {
+      padding: 30% 0; }
+      #about .aboutFooter .container-fluid .container .row .col-md-4 .container-fluid ul li {
+        list-style: none;
+        font-size: 18px;
+        float: left;
+        color: #868686;
+        margin-right: 15px;
+        background: white;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 43px;
+        border-radius: 100%; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 .container-fluid p {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.5); }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 h5 {
+      font-size: 20px;
+      color: #FFF;
+      font-weight: 400; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 a {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 .infoDemo {
+      color: #F57E57;
+      font-size: 15px; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 span {
+      padding: 10px 5px;
+      color: #F57E57; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.2);
+      padding-bottom: 25px; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 .aboutForm {
+      padding: 22px 0;
+      position: relative; }
+    #about .aboutFooter .container-fluid .container .row .col-md-4 .btnAbout {
+      background: #F57E57;
+      padding: 10.5px 30px;
       font-weight: 500;
-      font-size: 16px; }
-    #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-10 .container-fluid {
-      padding: 20px 0; }
-      #about .aboutTestimonials .container-fluid .container .row .col-md-4 .col-md-10 .container-fluid .col-md-8 h5 {
-        color: #18AFD3;
-        font-size: 20px;
-        font-weight: 600;
-        margin: 0;
-        padding: 3px 0; }
+      border: transparent;
+      position: absolute;
+      bottom: 15px;
+      font-size: 18px;
+      right: 0; }
+
+.dotActive {
+  border-radius: 100%;
+  background: rgba(24, 175, 211, 0.22); }
 
 /*about end*/
 

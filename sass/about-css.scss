@@ -2,11 +2,14 @@ $orange:#F57E57;
 $skyBlue:#18AFD3;
 $lightGray:#E5E5E5;
 $gray : rgb(134, 134, 134);
-
+$helvetica:"Lato",Helvetica,Arial,sans-serif; 
 $oswald: 'Oswald', sans-serif;
 .wrapper{
 	margin: 0 auto;
 	width: 960px;
+}
+.paddingAdd{
+  padding-left: 60px;
 }
 .padLeft{
   padding-left: 0;
@@ -18,10 +21,13 @@ $oswald: 'Oswald', sans-serif;
             background: $orange;
           }
 body{
-  font-family: "Lato",Helvetica,Arial,sans-serif; 
+  font-family: $helvetica;
 }
 .padding-rm{
   padding: 0;
+}
+.aboutLeft{
+   float:left;
 }
 /*about start*/
 #about{
@@ -95,15 +101,19 @@ body{
       		ul{
       			margin:0;
       			margin-left: -15px;
+            list-style: none;
       			li{
+                &:hover{
+                  background: $orange;
+              }
       				&:nth-child(2){
                   	background: #F57E57;
                   } 
-                    display: inline-block;
+                    float: left;
                     line-height: 100%;
-				    cursor: pointer;
-				    padding:15px 23px;
-				    font-size: 22px;
+				            cursor: pointer;
+				            padding:16.2px 23px;
+				            font-size: 22px;
 				    
 	                 a{
 						text-decoration: none;
@@ -124,6 +134,7 @@ body{
        	 		padding-bottom: 20px;
        	 		letter-spacing: 0.04em;
        	 		li{
+            
        	 			a{
        	 				color:#fff;
        	             }
@@ -281,41 +292,61 @@ body{
    .aboutTeam{
     font-family: $oswald;
     .container-fluid {
-        padding-bottom:7%;
-      .container{
-       
+        .container{
+         .aboutAllView{
+               transition: .25s;
+               position: relative;
+               top:0;            
+               }
+           .aboutProfile{
+               cursor: pointer;
+               background: $orange;
+               padding: 20px 30px;
+               position:absolute;
+               bottom:-50px;
+               width: 100%;
+              h5{
+                margin: 0;
+                color:white;
+
+              }
+            }
         .row{
           .col-md-12{
-            .container{
-              text-align: center;
+            .container{ 
+               text-align: center;
               .aboutView{
                 background: $orange;
                 border:none;
-                padding:12px 35px; 
-                margin-top: 20px;
+                padding:13px 35px; 
+                margin: 60px 0;
                 font-size: 18px;
                 border-radius: 25px;
                 &:hover{
                   background: $skyBlue;
-
                 }
               }
             }
               .row{
                 margin-bottom: 30px;
                 .col-md-3{
+                    
                   .aboutTeamMember{
                     background: $skyBlue;
-                    padding: 25px 30px;
+                    padding: 30px 30px;
+                    position: relative;
+
                     h5{
                       font-weight: 700;
                       font-size: 20px;
                       color:#fff;
+                      pointer-events:none;
                     }
                     em{
                       font-size: 14px;
                       color:#fff;
                       opacity: 0.8;
+                      pointer-events:none;
                     }
                   }
                 }
@@ -343,11 +374,27 @@ body{
    .aboutTestimonials{
     .container-fluid{
       background: #F1F3F9;
+      padding-bottom: 50px;
      .container{
+      .dotItem{
+        .col-md-12{
+          text-align: center;
+          .dot{
+            cursor: pointer;
+              display: inline-block;
+              padding: 2px 5px;
+             i{
+             color:$skyBlue;
+             pointer-events:none;
+           }
+          }
+        }
+      }
+     
        .row{
           .col-md-12{ 
             text-align: center;
-            padding: 60px 0;
+            padding: 80px 0;
             h1{
 
            }
@@ -360,23 +407,30 @@ body{
         }
       }
         .row{
-          .col-md-4{
-            .col-md-2{
-              padding: 0 20px;
-                i{
+          .testiPeople{
+            min-height: 200px;
+            position: relative;
+            display: inline-block;
+            width:100%;
+            &:last-child{
+            }
+           .col-md-4{
+             .col-md-2{
+                padding: 0 20px;
+                  i{
                   color:$orange;
                 }
              }
              .col-md-10{
                em{
                 color:$gray;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 16px;
                }
                .container-fluid {
 
                   padding: 20px 0;
-                .col-md-8{
+                .col-md-9{
                   h5{
                     color:$skyBlue;
                     font-size: 20px;
@@ -393,5 +447,90 @@ body{
      }
    }
  }
+ .aboutFooter{
+  font-family: $helvetica;
+       background: #038EAF;
+       padding-top: 4% ;
+   .container-fluid{
+    .container{
+      .row{
+        .col-md-4{
+          .container-fluid{
+              ul{
+                padding: 30% 0;
+                li{
+                  list-style:none;
+                  font-size: 18px;
+                  float: left;
+                  color:$gray;
+                  margin-right: 15px;
+                  background: white;
+                  height: 45px;
+                  width: 45px;
+                  text-align: center;
+                  line-height: 43px;
+                  border-radius: 100%;
+
+                 }
+               }
+               p{
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 0.04em;
+                color:rgba(255, 255, 255, 0.5);
+               }
+             }
+           }
+           .col-md-4{
+             h5{
+              font-size: 20px;
+              color:#FFF;
+              font-weight: 400;
+             }
+             a{
+              color:#fff;
+              font-size: 15px;
+              font-weight: 500;
+             }
+             .infoDemo{
+              color:$orange;
+              font-size: 15px;
+             }
+             span{
+              padding: 10px 5px;
+              color:$orange;
+             }
+           }
+           .col-md-4{
+            p{
+              font-size: 16px;
+              color:rgba(255, 255, 255, 0.2);
+              padding-bottom: 25px;            }
+            .aboutForm{
+              padding: 22px 0;
+              position: relative;
+            }
+            .btnAbout{
+              background: $orange;
+              padding:10.5px 30px;
+              font-weight: 500;
+              border: transparent;
+              position: absolute;
+              bottom:15px;
+              font-size: 18px;
+              right:0;
+            }
+           }
+         }
+       }
+     }
+   }
+ }
+
  
+.dotActive{
+     border-radius: 100%;
+     background: rgba(24, 175, 211, 0.22);
+     
+ }
 /*about end*/
