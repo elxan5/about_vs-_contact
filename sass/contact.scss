@@ -1,0 +1,122 @@
+$orange:#F57E57;
+$skyBlue:#18AFD3;
+$black:#000;
+$white:#fff;
+$lightGray:#E5E5E5;
+$gray : rgb(134, 134, 134);
+$helvetica:"Lato",Helvetica,Arial,sans-serif; 
+$oswald: 'Oswald', sans-serif;
+.padding-rm{
+	padding: 0;
+}
+body{
+	font-family: $helvetica;
+}
+.contactUnderLine{
+   	margin-bottom: 60px;
+   	padding: 2px;
+   	width: 80px;
+   	background: $orange;
+          }
+#contact{
+  .contactTop{
+  	 padding-top: 30px;
+  	 padding-bottom: 60px;
+  	 border:1px solid black;
+    .container-fluid{
+       .container{
+    	 .row{
+    	   .col-md-3{
+    	  	 span{
+    	  	   a{
+    	  		 color:#333333;
+    	  		 font-weight: 400;
+    	  		 line-height: 26px;
+    	  		}
+    	  		i{
+    	  		 color:$skyBlue;
+    	  		}
+    	  		margin-right: 10px;
+    	  		&:first-child{
+    	  	  	height: 50px;
+    	  	  	width: 50px;
+    	  	  	border-radius: 100%;
+    	  	  	line-height: 60px;
+    	  	  	text-align: center;
+    	  	  	background: $lightGray;
+    	  	}
+    	   } 
+    	  }
+        }
+      }
+    }
+  }
+.contactNav{
+		font-family: $oswald;
+		position: relative;
+		top:-25px;
+  	.container{
+  		border-radius: 10px;
+  		background: $skyBlue;
+    	.row{
+      		.col-md-12{
+          		ul{
+          			   list-style-type:none;
+          		 	li{
+          		 		&:last-child{
+          		 			background: $orange;
+          		 		}
+                       	float: left;
+                      	 padding: 15px 25px;
+                     a{
+                     	color:$white;
+                     	font-weight: 400;
+                     	font-size: 16px;
+                     }
+    	    	  }
+          	    }
+             }
+           }
+        }
+     }
+     #contactImg{
+            position: relative;
+			background: url(..//img/aboutSlide.jpg);
+			background-position: center;
+			background-size: cover;
+            z-index: -5;
+            top:-55px;
+     	.container{
+     		border: 1px solid black;
+     		letter-spacing: 0.03em;
+     		h1{
+     		  font-family: 'PT Sans', sans-serif;
+     		  padding-top:7%;
+     		  color:white;
+     		  font-weight: 500;
+     		  font-size: 80px;
+     		  line-height: 1.85;
+     		}
+     		ul{
+     			list-style-type: none;
+     			padding-top: 2.7%;
+     			padding-bottom:25px;
+     			font-size: 13px;
+     			font-weight:500; 
+
+     			li{
+
+     				color:$white;
+     				i{
+     					color:$lightGray;
+     				}
+     				a{
+     					color:$white;
+     				}
+     			}
+     		}
+     	}
+     }
+
+
+  }

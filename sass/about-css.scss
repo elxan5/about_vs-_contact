@@ -330,7 +330,7 @@ body{
               .row{
                 margin-bottom: 30px;
                 .col-md-3{
-                    
+                    overflow: hidden;
                   .aboutTeamMember{
                     background: $skyBlue;
                     padding: 30px 30px;
@@ -487,6 +487,7 @@ body{
               color:#FFF;
               font-weight: 400;
              }
+                
              a{
               color:#fff;
               font-size: 15px;

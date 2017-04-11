@@ -1,0 +1,80 @@
+.padding-rm {
+  padding: 0; }
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif; }
+
+.contactUnderLine {
+  margin-bottom: 60px;
+  padding: 2px;
+  width: 80px;
+  background: #F57E57; }
+
+#contact .contactTop {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border: 1px solid black; }
+  #contact .contactTop .container-fluid .container .row .col-md-3 span {
+    margin-right: 10px; }
+    #contact .contactTop .container-fluid .container .row .col-md-3 span a {
+      color: #333333;
+      font-weight: 400;
+      line-height: 26px; }
+    #contact .contactTop .container-fluid .container .row .col-md-3 span i {
+      color: #18AFD3; }
+    #contact .contactTop .container-fluid .container .row .col-md-3 span:first-child {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      line-height: 60px;
+      text-align: center;
+      background: #E5E5E5; }
+#contact .contactNav {
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  top: -25px; }
+  #contact .contactNav .container {
+    border-radius: 10px;
+    background: #18AFD3; }
+    #contact .contactNav .container .row .col-md-12 ul {
+      list-style-type: none; }
+      #contact .contactNav .container .row .col-md-12 ul li {
+        float: left;
+        padding: 15px 25px; }
+        #contact .contactNav .container .row .col-md-12 ul li:last-child {
+          background: #F57E57; }
+        #contact .contactNav .container .row .col-md-12 ul li a {
+          color: #fff;
+          font-weight: 400;
+          font-size: 16px; }
+#contact #contactImg {
+  position: relative;
+  background: url(..//img/aboutSlide.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -5;
+  top: -55px; }
+  #contact #contactImg .container {
+    border: 1px solid black;
+    letter-spacing: 0.03em; }
+    #contact #contactImg .container h1 {
+      font-family: 'PT Sans', sans-serif;
+      padding-top: 7%;
+      color: white;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 1.85; }
+    #contact #contactImg .container ul {
+      list-style-type: none;
+      padding-top: 2.7%;
+      padding-bottom: 25px;
+      font-size: 13px;
+      font-weight: 500; }
+      #contact #contactImg .container ul li {
+        color: #fff; }
+        #contact #contactImg .container ul li i {
+          color: #E5E5E5; }
+        #contact #contactImg .container ul li a {
+          color: #fff; }
+
+/*# sourceMappingURL=contact.css.map */
