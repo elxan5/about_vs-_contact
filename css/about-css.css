@@ -31,7 +31,8 @@ body {
   /*about Us*/
   /*about Team*/
   /*end About TEam*/
-  /*star TEStimonials*/ }
+  /*star TEStimonials*/
+  /*about footer*/ }
   #about .aboutTop {
     padding-top: 35px;
     padding-bottom: 80px; }
@@ -60,7 +61,7 @@ body {
   #about .aboutContent {
     font-family: "Oswald", sans-serif;
     position: relative;
-    background: url(..//img/aboutSlide.jpg);
+    background: url(..//img/aboutSlide.jpg) no-repeat;
     background-position: center;
     background-size: cover; }
     #about .aboutContent .container-fluid .aboutNav {

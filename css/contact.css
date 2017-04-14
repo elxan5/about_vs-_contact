@@ -1,6 +1,37 @@
 .padding-rm {
   padding: 0; }
 
+.paddingRm-left {
+  padding-left: 0; }
+
+.paddingRm-right {
+  padding-right: 0; }
+
+.navFixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  padding-left: 12%; }
+
+body {
+  transition: all 2s; }
+
+.footer-hr {
+  position: relative;
+  height: 1px;
+  padding: 0;
+  background: #e5e5e5;
+  margin-bottom: 22px; }
+  .footer-hr:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 50px;
+    background: #F57E57; }
+
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif; }
 
@@ -12,8 +43,7 @@ body {
 
 #contact .contactTop {
   padding-top: 30px;
-  padding-bottom: 60px;
-  border: 1px solid black; }
+  padding-bottom: 60px; }
   #contact .contactTop .container-fluid .container .row .col-md-3 span {
     margin-right: 10px; }
     #contact .contactTop .container-fluid .container .row .col-md-3 span a {
@@ -31,31 +61,34 @@ body {
       background: #E5E5E5; }
 #contact .contactNav {
   font-family: "Oswald", sans-serif;
-  position: relative;
-  top: -25px; }
-  #contact .contactNav .container {
+  position: absolute;
+  top: 18%;
+  left: 11%;
+  z-index: 5; }
+  #contact .contactNav #allNav {
     border-radius: 10px;
     background: #18AFD3; }
-    #contact .contactNav .container .row .col-md-12 ul {
+    #contact .contactNav #allNav .row .col-md-12 ul {
+      margin: 0 -30px;
       list-style-type: none; }
-      #contact .contactNav .container .row .col-md-12 ul li {
+      #contact .contactNav #allNav .row .col-md-12 ul li {
         float: left;
-        padding: 15px 25px; }
-        #contact .contactNav .container .row .col-md-12 ul li:last-child {
+        padding: 15px 26px; }
+        #contact .contactNav #allNav .row .col-md-12 ul li:hover {
           background: #F57E57; }
-        #contact .contactNav .container .row .col-md-12 ul li a {
+        #contact .contactNav #allNav .row .col-md-12 ul li:last-child {
+          background: #F57E57; }
+        #contact .contactNav #allNav .row .col-md-12 ul li a {
           color: #fff;
           font-weight: 400;
-          font-size: 16px; }
+          font-size: 18px; }
 #contact #contactImg {
   position: relative;
   background: url(..//img/aboutSlide.jpg);
   background-position: center;
   background-size: cover;
-  z-index: -5;
-  top: -55px; }
+  z-index: -5; }
   #contact #contactImg .container {
-    border: 1px solid black;
     letter-spacing: 0.03em; }
     #contact #contactImg .container h1 {
       font-family: 'PT Sans', sans-serif;
@@ -76,5 +109,119 @@ body {
           color: #E5E5E5; }
         #contact #contactImg .container ul li a {
           color: #fff; }
+#contact .contactTouch {
+  padding: 60px 0; }
+  #contact .contactTouch .container #comment {
+    margin: 0px -15px;
+    width: 101.5%; }
+  #contact .contactTouch .container .col-md-8 p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #bdbdbd; }
+  #contact .contactTouch .container .col-md-8 .form-group {
+    color: #bdbdbd; }
+  #contact .contactTouch .container .col-md-8 .row button {
+    margin: 20px 0;
+    font-size: 16px;
+    background: #F57E57;
+    border: transparent;
+    padding: 12px 20px;
+    border-radius: 30px; }
+    #contact .contactTouch .container .col-md-8 .row button:hover {
+      background: #18AFD3; }
+  #contact .contactTouch .container .col-md-8 .row .col-md-6 .form-control {
+    padding: 20px 0; }
+  #contact .contactTouch .container .col-md-4 {
+    font-family: "Oswald", sans-serif; }
+    #contact .contactTouch .container .col-md-4 .row {
+      padding-left: 15px;
+      padding-bottom: 40px; }
+      #contact .contactTouch .container .col-md-4 .row h5 {
+        font-size: 19px;
+        font-weight: 400;
+        color: #333333; }
+      #contact .contactTouch .container .col-md-4 .row:first-child ul {
+        padding: 0; }
+        #contact .contactTouch .container .col-md-4 .row:first-child ul li {
+          list-style: none;
+          font-size: 18px;
+          float: left;
+          color: #868686;
+          margin-right: 15px;
+          background: #E5E5E5;
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 39px;
+          border-radius: 100%;
+          cursor: pointer; }
+          #contact .contactTouch .container .col-md-4 .row:first-child ul li:hover {
+            background: #F57E57;
+            color: #fff; }
+      #contact .contactTouch .container .col-md-4 .row span {
+        display: inline-block; }
+        #contact .contactTouch .container .col-md-4 .row span i {
+          color: #F57E57;
+          margin: 2px 15px;
+          font-size: 1.4em; }
+        #contact .contactTouch .container .col-md-4 .row span a {
+          color: #565757;
+          font-size: 15px; }
+#contact .contactFooter .container-fluid {
+  background: #038EAF; }
+  #contact .contactFooter .container-fluid .container .col-md-12 .row {
+    padding: 50px 0; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4 h5 {
+      padding-bottom: 10px;
+      font-size: 20px;
+      color: #FFF;
+      font-weight: 500; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:first-child .container-fluid ul {
+      padding: 28% 0; }
+      #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:first-child .container-fluid ul li {
+        list-style: none;
+        font-size: 18px;
+        float: left;
+        color: #868686;
+        margin-right: 15px;
+        background: white;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 100%; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:first-child .container-fluid p {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.5); }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(2) a {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(2) .infoDemo {
+      color: #F57E57;
+      font-size: 15px; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(2) span {
+      padding: 10px 0px;
+      color: #F57E57;
+      padding-right: 10px;
+      font-size: 1.4em; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(3) p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.2);
+      padding-bottom: 16px; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(3) .aboutForm {
+      padding: 20px 0;
+      position: relative; }
+    #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(3) .btnAbout {
+      background: #F57E57;
+      padding: 8.5px 30px;
+      font-weight: 500;
+      border: transparent;
+      position: absolute;
+      bottom: 15px;
+      font-size: 18px;
+      right: 0; }
 
 /*# sourceMappingURL=contact.css.map */
