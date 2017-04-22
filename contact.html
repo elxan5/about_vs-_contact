@@ -18,13 +18,13 @@
   <body>
     <section id="contact">
        <div class="contactTop">
-         <div class="container-fluid padding-rm">
            <div class="container">
              <div class="row">
                <div class="col-md-6 padding-rm">
                   <img src="img/adif.png" alt="">
                </div>
-               <div class="col-md-3">
+               <div class="col-md-3 collapse navbar-collapse" id="myNavbar">
+
                   <span class="pull-left">
                     <i class=" fa fa-phone fa-2x" aria-hidden="true"></i>
                   </span>
@@ -34,7 +34,7 @@
                        <a href="#">1-800-3214-654</a>
                     </span>
                </div>
-               <div class="col-md-3">
+               <div class="col-md-3 paddingRm-right">
                    <span class="pull-left">
                     <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                   </span>
@@ -46,33 +46,148 @@
                </div>
              </div>
            </div>
-         </div>
        </div>
-  <div class="contactNav">
-  <div  id= "fluidNav" class="container-fluid padding-rm">
-    <div id="allNav" class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-collapse">
-          <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">TEAM</a></li>
-              <li><a href="#">PAGES</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">DEPARTMENTS</a></li>
-              <li><a href="#">TIMETABLE</a></li>
-              <li><a href="#">GALLERY</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-          </ul>          
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
+
+                <div class="aboutNav">
+            <div class="container">
+                <div class="row">
+                    <div class="navBar col-md-12">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">TEAM</a></li>
+                            <li class="pageMain"><a href="#">PAGES</a><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">DEPARTMENTS</a></li>
+                            <li><a href="#">TIMETABLE</a></li>
+                            <li class="galleryDrop"><a href="#">GALLERY</a>
+                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                <ul class="drop-down">
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                </ul>
+                            </li>
+                            <li class="galleryDrop"><a href="#">BLOG</a>
+                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                <ul class="drop-down">
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                    <li> <i class=" iconFa fa fa-chevron-right" aria-hidden="true"></i><a>simple</a></li>
+                                </ul>   
+                            </li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                      <div class="searchHelp">
+                        <form action="">
+                            <input class="navInput" type="text" name="search">
+                        </form>
+                          <span class="navNews">TYPE AND HIT ENTER...</span>
+                            <i class="removeSearch fa fa-times" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                    <div class="pageDown">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4>ELEMENTS</h4>
+                                    <div class="footer-hr"></div>
+                                    <ul class="drop-down">
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Typography</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Forms</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Buttons</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Grid</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Tabs & Accardions</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Progress Bars</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Icons</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Tables</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>PAGES 1</h4>
+                                    <div class="footer-hr"></div>
+                                    <ul>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Team Memmber Profile</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Careers</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>FAQ Page</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Pricing </a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Coming Soon</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Maintenance</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Under Construction</a></li>
+                                        <li>
+                                            <i class="fa dropIcon fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Login Register</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>PAGES 2</h4>
+                                    <div class="footer-hr"></div>
+                                    <ul>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>clients</a></li>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Partners</a></li>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Terms of Users</a></li>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Search Results</a></li>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>404 Page</a></li>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>503 Page</a></li>
+                                        <li>
+                                            <i class="dropIcon fa fa-chevron-right" aria-hidden="true"></i>
+                                            <a>Make and Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
 <div id="contactImg" class="container-fluid padding-rm">
    <div class="container padding-rm">
-   <h1>CONTACTS</h1>
+     <h1>CONTACTS</h1>
    <ul class="list-inline">
       <li><a href="#">HOME</a></li>
       <li><i class="iconArrow fa fa-arrow-right" aria-hidden="true"></i></li>
@@ -199,7 +314,8 @@
 <div class="contactMap">  
   <div class="container-fluid padding-rm"> 
     <div id="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.43000044636!2d49.71487373532197!3d40.39450797792364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307cd91aa21ddf%3A0xe6c9526b3e83cd08!2sAz%C9%99rbaycan!5e0!3m2!1saz!2s!4v1492104276841" width="100% " height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1saz!2s!4v1492202266913" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
   </div>
 </div>
     <!--/CONTACT MAP-->

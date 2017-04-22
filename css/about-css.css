@@ -5,6 +5,21 @@
 .paddingAdd {
   padding-left: 60px; }
 
+.footer-hr {
+  position: relative;
+  height: 1px;
+  padding: 0;
+  background: #e5e5e5;
+  margin-bottom: 22px; }
+  .footer-hr:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 50px;
+    background: #F57E57; }
+
 .padLeft {
   padding-left: 0; }
 
@@ -15,7 +30,9 @@
   background: #F57E57; }
 
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px; }
 
 .padding-rm {
   padding: 0; }
@@ -35,29 +52,21 @@ body {
   /*about footer*/ }
   #about .aboutTop {
     padding-top: 35px;
-    padding-bottom: 80px; }
-    #about .aboutTop .container-fluid .container .row .aboutCall .col-md-3 .iconPhone {
-      padding: 12px 15px;
-      font-size: 1.9em;
+    padding-bottom: 65px; }
+    #about .aboutTop .container-fluid .container .row .col-md-3 .col-md-3 span {
+      height: 50px;
+      width: 50px;
       border-radius: 100%;
+      line-height: 50px;
+      text-align: center;
       color: #18AFD3;
+      font-size: 1.4em;
       background: #E5E5E5; }
-    #about .aboutTop .container-fluid .container .row .aboutCall .col-md-9 a {
-      font-size: 15px;
-      line-height: 25px;
+    #about .aboutTop .container-fluid .container .row .col-md-3 .col-md-9 a {
       color: #333333;
-      display: inline-block; }
-    #about .aboutTop .container-fluid .container .row .aboutAdress .col-md-3 .iconMap {
-      padding: 12px 18px;
-      font-size: 1.8em;
-      border-radius: 100%;
-      color: #18AFD3;
-      background: #E5E5E5; }
-    #about .aboutTop .container-fluid .container .row .aboutAdress .col-md-9 a {
-      font-size: 15px;
-      line-height: 25px;
-      color: #333333;
-      display: inline-block; }
+      font-weight: 500;
+      line-height: 26px;
+      font-size: 1em; }
   #about .aboutContent {
     font-family: "Oswald", sans-serif;
     position: relative;
@@ -65,41 +74,149 @@ body {
     background-position: center;
     background-size: cover; }
     #about .aboutContent .container-fluid .aboutNav {
+      z-index: 100;
       position: relative;
-      top: -30px; }
-      #about .aboutContent .container-fluid .aboutNav .container {
-        background: #18AFD3;
-        border-radius: 10px; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul {
+      top: -30px;
+      font-family: 'Oswald', sans-serif; }
+      #about .aboutContent .container-fluid .aboutNav .container .row .navBar {
+        border-radius: 7px;
+        box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+        background: #18AFD3; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .searchHelp .navInput {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-radius: 7px;
+          background: #18AFD3;
+          border: transparent;
+          padding: 11px 15px;
+          color: #fff;
+          font-size: 26px; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .searchHelp .removeSearch {
+          color: #fff;
+          position: absolute;
+          right: 2%;
+          display: none;
+          top: 4px;
+          cursor: pointer;
+          padding: 15px;
+          font-size: 1.2em; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .searchHelp .navNews {
+          display: none;
+          position: absolute;
+          left: 15px;
+          color: white;
+          pointer-events: none;
+          font-size: 26px;
+          top: 10px; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul {
+          transition: .5s;
+          padding: 0;
           margin: 0;
-          margin-left: -15px;
           list-style: none; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li {
+          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul .galleryDrop:hover ul {
+            display: block; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul .galleryDrop:hover .dropIcon {
+            display: block; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li {
             float: left;
             line-height: 100%;
             cursor: pointer;
-            padding: 16.2px 23px;
-            font-size: 22px; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li:hover {
+            padding: 20px 24px;
+            font-size: 16px;
+            position: relative; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down {
+              position: absolute;
+              top: 100%;
+              left: 0%;
+              width: 100%;
+              padding: 0;
+              display: none; }
+              #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li {
+                position: relative;
+                background-color: #f9f9f9;
+                min-width: 200px;
+                font-size: 1em;
+                color: black;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+                #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li .iconFa {
+                  color: #F57E57;
+                  display: none; }
+                #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li a {
+                  font-size: .9em;
+                  color: #18AFD3;
+                  position: relative;
+                  left: 0;
+                  padding: 10px 10px; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li:hover {
               background: #F57E57; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li:nth-child(2) {
-              background: #F57E57; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .col-md-12 ul li a {
-              text-decoration: none;
-              color: #F9FDFE;
-              font-size: 17px;
-              font-weight: 400; }
-    #about .aboutContent .container-fluid .container:nth-child(2) {
+            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li .navSearch {
+              font-size: 1em;
+              position: absolute;
+              right: 15px;
+              top: 7px;
+              padding: 15px 0; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li:last-child {
+              background: transparent; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul a {
+            text-decoration: none;
+            color: #F9FDFE;
+            font-size: 1em;
+            font-weight: 400; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul i {
+            font-size: .5em;
+            color: #fff;
+            line-height: 10px;
+            margin-left: 5px; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .activeNav {
+          background: #F57E57; }
+      #about .aboutContent .container-fluid .aboutNav .container .row .pageDown {
+        transition: all .2s ease-in-out;
+        display: none;
+        background: #FFF;
+        position: absolute;
+        min-width: 1165px;
+        top: 100%;
+        z-index: -66;
+        font-family: "Lato", Helvetica, Arial, sans-serif; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 h4 {
+          font-weight: 500; }
+        #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul {
+          padding: 0;
+          list-style: none; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li {
+            position: relative;
+            cursor: pointer;
+            font-weight: 500;
+            line-height: 45px; }
+            #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li:hover a {
+              color: #F57E57; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul .dropIcon {
+            color: #F57E57;
+            font-size: .7em;
+            display: none;
+            position: relative;
+            pointer-events: none; }
+          #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul a {
+            text-decoration: none;
+            position: relative;
+            left: 0;
+            color: #18AFD3;
+            padding: 12px 0px; }
+    #about .aboutContent .container-fluid .aboutModern:nth-child(2) {
       color: #fff; }
-      #about .aboutContent .container-fluid .container:nth-child(2) ul {
+      #about .aboutContent .container-fluid .aboutModern:nth-child(2) ul {
         padding-bottom: 20px;
         letter-spacing: 0.04em; }
-        #about .aboutContent .container-fluid .container:nth-child(2) ul li a {
+        #about .aboutContent .container-fluid .aboutModern:nth-child(2) ul li a {
           color: #fff; }
-        #about .aboutContent .container-fluid .container:nth-child(2) ul li .iconArrow {
+        #about .aboutContent .container-fluid .aboutModern:nth-child(2) ul li .iconArrow {
           color: #E5E5E5; }
-      #about .aboutContent .container-fluid .container:nth-child(2) h1 {
-        padding: 50px 0;
+      #about .aboutContent .container-fluid .aboutModern:nth-child(2) h1 {
+        padding: 55px 0;
         font-size: 80px;
         font-weight: 400;
         line-height: 1.25;
@@ -152,38 +269,37 @@ body {
       padding: 13px 20px;
       border-radius: 30px; }
   #about .aboutAchievments {
-    padding: 30px 0; }
-    #about .aboutAchievments .container-fluid .row .col-md-12 {
-      background: #F1F3F9; }
-      #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-5 img {
-        height: 100%; }
-      #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 {
-        padding: 65px 0;
-        padding-left: 100px; }
-        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .awardBest {
-          padding-bottom: 52px; }
-        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 h1 {
-          color: #333333;
-          padding: 15px 0; }
-        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-3 {
-          padding: 17px 0;
-          text-align: center; }
-          #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-3 .faGrad {
-            padding: 17% 14%; }
-          #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-3 span {
-            border: 2px solid #fff;
-            border-radius: 100%;
-            font-size: 1.9em;
-            padding: 17% 19.5%;
-            background: #F57E57;
-            color: white; }
-        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-9 .starAward {
-          padding: 13px 0; }
-        #about .aboutAchievments .container-fluid .row .col-md-12 .col-md-7 .col-md-9 h5 {
-          font-size: 21px;
-          line-height: 1.3em;
-          font-weight: 600;
-          color: #18AFD3; }
+    background: #f1f3f9; }
+    #about .aboutAchievments #achivback .col-md-5 {
+      background: url(..//img/about3.jpg) no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 525px; }
+    #about .aboutAchievments .rightAchive {
+      padding-top: 7.5%;
+      padding-left: 6%; }
+      #about .aboutAchievments .rightAchive .achiveHood h1 {
+        font-size: 1.9em;
+        font-weight: 600; }
+      #about .aboutAchievments .rightAchive .row {
+        padding-bottom: 6.8%; }
+        #about .aboutAchievments .rightAchive .row .col-lg-6 .col-md-3 span {
+          height: 55px;
+          width: 55px;
+          border-radius: 100%;
+          line-height: 54px;
+          text-align: center;
+          background: #F57E57;
+          border: 2px solid white;
+          font-size: 1.3em; }
+          #about .aboutAchievments .rightAchive .row .col-lg-6 .col-md-3 span i {
+            color: #fff; }
+        #about .aboutAchievments .rightAchive .row .col-md-8 span p {
+          color: #18AFD3;
+          font-size: 1.46em;
+          font-weight: 600; }
+        #about .aboutAchievments .rightAchive .row .col-md-8 span .achivSec {
+          margin-top: 15px; }
   #about .aboutTeam {
     font-family: "Oswald", sans-serif; }
     #about .aboutTeam .container-fluid .container .aboutAllView {
@@ -207,24 +323,28 @@ body {
         border: none;
         padding: 13px 35px;
         margin: 60px 0;
-        font-size: 18px;
+        font-size: 1.1em;
         border-radius: 25px; }
         #about .aboutTeam .container-fluid .container .row .col-md-12 .container .aboutView:hover {
           background: #18AFD3; }
     #about .aboutTeam .container-fluid .container .row .col-md-12 .row {
       margin-bottom: 30px; }
-      #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 {
+      #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-lg-3 {
         overflow: hidden; }
-        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember {
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-lg-3 img {
+          width: 100%; }
+        #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-lg-3 .aboutTeamMember {
+          font-size: 1.1em;
           background: #18AFD3;
-          padding: 30px 30px;
+          padding: 30px 0px;
+          padding-left: 30px;
           position: relative; }
-          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember h5 {
+          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-lg-3 .aboutTeamMember h5 {
             font-weight: 700;
             font-size: 20px;
             color: #fff;
             pointer-events: none; }
-          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-md-3 .aboutTeamMember em {
+          #about .aboutTeam .container-fluid .container .row .col-md-12 .row .col-lg-3 .aboutTeamMember em {
             font-size: 14px;
             color: #fff;
             opacity: 0.8;
@@ -271,7 +391,7 @@ body {
       #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-10 em {
         color: #868686;
         font-weight: 400;
-        font-size: 16px; }
+        font-size: 0.9em; }
       #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-10 .container-fluid {
         padding: 20px 0; }
         #about .aboutTestimonials .container-fluid .container .row .testiPeople .col-md-4 .col-md-10 .container-fluid .col-md-9 h5 {
@@ -309,7 +429,7 @@ body {
       font-weight: 400; }
     #about .aboutFooter .container-fluid .container .row .col-md-4 a {
       color: #fff;
-      font-size: 15px;
+      font-size: 0.9em;
       font-weight: 500; }
     #about .aboutFooter .container-fluid .container .row .col-md-4 .infoDemo {
       color: #F57E57;
@@ -318,15 +438,16 @@ body {
       padding: 10px 5px;
       color: #F57E57; }
     #about .aboutFooter .container-fluid .container .row .col-md-4 p {
-      font-size: 16px;
+      font-size: 1em;
       color: rgba(255, 255, 255, 0.2);
-      padding-bottom: 25px; }
+      padding-bottom: 20px;
+      padding-top: 10px; }
     #about .aboutFooter .container-fluid .container .row .col-md-4 .aboutForm {
-      padding: 22px 0;
+      padding: 25px 0;
       position: relative; }
     #about .aboutFooter .container-fluid .container .row .col-md-4 .btnAbout {
       background: #F57E57;
-      padding: 10.5px 30px;
+      padding: 13.5px 30px;
       font-weight: 500;
       border: transparent;
       position: absolute;

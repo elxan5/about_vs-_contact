@@ -42,48 +42,167 @@ body {
   background: #F57E57; }
 
 #contact .contactTop {
-  padding-top: 30px;
-  padding-bottom: 60px; }
-  #contact .contactTop .container-fluid .container .row .col-md-3 span {
+  padding-top: 35px;
+  padding-bottom: 5px; }
+  #contact .contactTop .container .row .col-md-3 span {
     margin-right: 10px; }
-    #contact .contactTop .container-fluid .container .row .col-md-3 span a {
+    #contact .contactTop .container .row .col-md-3 span a {
       color: #333333;
       font-weight: 400;
-      line-height: 26px; }
-    #contact .contactTop .container-fluid .container .row .col-md-3 span i {
+      line-height: 26px;
+      font-size: 1.1em; }
+    #contact .contactTop .container .row .col-md-3 span i {
       color: #18AFD3; }
-    #contact .contactTop .container-fluid .container .row .col-md-3 span:first-child {
+    #contact .contactTop .container .row .col-md-3 span:first-child {
+      font-size: .8em;
       height: 50px;
       width: 50px;
       border-radius: 100%;
       line-height: 60px;
       text-align: center;
       background: #E5E5E5; }
-#contact .contactNav {
-  font-family: "Oswald", sans-serif;
-  position: absolute;
-  top: 18%;
-  left: 11%;
-  z-index: 5; }
-  #contact .contactNav #allNav {
-    border-radius: 10px;
-    background: #18AFD3; }
-    #contact .contactNav #allNav .row .col-md-12 ul {
-      margin: 0 -30px;
-      list-style-type: none; }
-      #contact .contactNav #allNav .row .col-md-12 ul li {
-        float: left;
-        padding: 15px 26px; }
-        #contact .contactNav #allNav .row .col-md-12 ul li:hover {
-          background: #F57E57; }
-        #contact .contactNav #allNav .row .col-md-12 ul li:last-child {
-          background: #F57E57; }
-        #contact .contactNav #allNav .row .col-md-12 ul li a {
-          color: #fff;
-          font-weight: 400;
-          font-size: 18px; }
-#contact #contactImg {
+#contact .aboutNav {
+  z-index: 100;
   position: relative;
+  top: 30px;
+  font-family: "Oswald", sans-serif; }
+  #contact .aboutNav .container .row .navBar {
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    background: #18AFD3; }
+    #contact .aboutNav .container .row .navBar .searchHelp .navInput {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 7px;
+      background: #18AFD3;
+      border: transparent;
+      padding: 11px 15px;
+      color: #fff;
+      font-size: 26px; }
+    #contact .aboutNav .container .row .navBar .searchHelp .removeSearch {
+      color: #fff;
+      position: absolute;
+      right: 2%;
+      display: none;
+      top: 4px;
+      cursor: pointer;
+      padding: 15px;
+      font-size: 1.2em; }
+    #contact .aboutNav .container .row .navBar .searchHelp .navNews {
+      display: none;
+      position: absolute;
+      left: 15px;
+      color: white;
+      pointer-events: none;
+      font-size: 26px;
+      top: 10px; }
+    #contact .aboutNav .container .row .navBar ul {
+      transition: .5s;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      #contact .aboutNav .container .row .navBar ul .galleryDrop:hover ul {
+        display: block; }
+      #contact .aboutNav .container .row .navBar ul .galleryDrop:hover .dropIcon {
+        display: block; }
+      #contact .aboutNav .container .row .navBar ul li {
+        float: left;
+        line-height: 100%;
+        cursor: pointer;
+        padding: 20px 24px;
+        font-size: 18px;
+        position: relative; }
+        #contact .aboutNav .container .row .navBar ul li .activeNav {
+          background: #F57E57; }
+        #contact .aboutNav .container .row .navBar ul li .navSearch {
+          font-size: 1em;
+          position: absolute;
+          right: 15px;
+          top: 7px;
+          color: red;
+          z-index: 110;
+          padding: 15px 0; }
+        #contact .aboutNav .container .row .navBar ul li ul.drop-down {
+          position: absolute;
+          top: 100%;
+          left: 0%;
+          width: 100%;
+          padding: 0;
+          display: none; }
+          #contact .aboutNav .container .row .navBar ul li ul.drop-down li {
+            position: relative;
+            background-color: #fff;
+            min-width: 200px;
+            color: black;
+            overflow: auto;
+            font-size: 1.1em;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+            #contact .aboutNav .container .row .navBar ul li ul.drop-down li .iconFa {
+              color: #F57E57;
+              display: none; }
+            #contact .aboutNav .container .row .navBar ul li ul.drop-down li a {
+              font-size: 1em;
+              color: #18AFD3;
+              position: relative;
+              left: 0;
+              padding: 10px 10px; }
+        #contact .aboutNav .container .row .navBar ul li:hover {
+          background: #F57E57; }
+      #contact .aboutNav .container .row .navBar ul a {
+        text-decoration: none;
+        color: #F9FDFE;
+        font-weight: 400; }
+      #contact .aboutNav .container .row .navBar ul i {
+        font-size: .5em;
+        color: #fff;
+        margin-left: 5px; }
+    #contact .aboutNav .container .row .navBar .activeNav {
+      background: #F57E57; }
+  #contact .aboutNav .container .row .pageDown {
+    transition: all .2s ease-in-out;
+    display: none;
+    background: #FFF;
+    position: absolute;
+    min-width: 1165px;
+    top: 100%;
+    z-index: -66;
+    font-family: "Lato", Helvetica, Arial, sans-serif; }
+    #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 h4 {
+      font-weight: 500; }
+    #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul {
+      padding: 0;
+      list-style: none; }
+      #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li {
+        position: relative;
+        cursor: pointer;
+        font-weight: 500;
+        padding: 5px 0;
+        line-height: 38px; }
+        #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li:hover a {
+          color: #F57E57; }
+        #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li .navSearch {
+          font-size: 1em;
+          position: absolute;
+          right: 15px;
+          top: 7px;
+          padding: 15px 0; }
+      #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul .dropIcon {
+        color: #F57E57;
+        font-size: .7em;
+        display: none;
+        position: relative;
+        pointer-events: none; }
+      #contact .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul a {
+        text-decoration: none;
+        position: relative;
+        font-size: 1.1em;
+        left: 0;
+        color: #18AFD3;
+        padding: 15px 0px; }
+#contact #contactImg {
   background: url(..//img/aboutSlide.jpg);
   background-position: center;
   background-size: cover;

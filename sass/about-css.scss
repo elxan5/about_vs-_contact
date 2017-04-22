@@ -1,538 +1,689 @@
 $orange:#F57E57;
 $skyBlue:#18AFD3;
 $lightGray:#E5E5E5;
-$gray : rgb(134, 134, 134);
-$helvetica:"Lato",Helvetica,Arial,sans-serif; 
-$oswald: 'Oswald', sans-serif;
-.wrapper{
-	margin: 0 auto;
-	width: 960px;
+$gray: rgb(134, 134, 134);
+$helvetica:"Lato",
+Helvetica,
+Arial,
+sans-serif;
+$oswald: 'Oswald',
+sans-serif;
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
 }
-.paddingAdd{
-  padding-left: 60px;
+
+.paddingAdd {
+    padding-left: 60px;
 }
-.padLeft{
-  padding-left: 0;
+.footer-hr {
+    position: relative;
+    height: 1px;
+    padding: 0;
+    background: #e5e5e5;
+    margin-bottom: 22px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 50px;
+        background: $orange;
+    }
 }
-.aboutUnderLine{
-            margin-bottom: 60px;
-            padding: 3px;
-            width: 80px;
-            background: $orange;
-          }
-body{
-  font-family: $helvetica;
+
+.padLeft {
+    padding-left: 0;
 }
-.padding-rm{
-  padding: 0;
+
+.aboutUnderLine {
+    margin-bottom: 60px;
+    padding: 3px;
+    width: 80px;
+    background: $orange;
 }
-.aboutLeft{
-   float:left;
+
+body {
+    font-family: $helvetica;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
+
+.padding-rm {
+    padding: 0;
+}
+
+.aboutLeft {
+    float: left;
+}
+
+
 /*about start*/
-#about{
-  .aboutTop{
-  	padding-top: 35px;
-  	padding-bottom: 80px;
-    .container-fluid{
-      .container{
-        .row{
-           .aboutCall{
-             .col-md-3{
-                .iconPhone{
-                	padding: 12px 15px;
-                	font-size: 1.9em;
-                	border-radius: 100%;
-                	color:$skyBlue;
-                	background: $lightGray;
-                    }
-        	      }
-        	      .col-md-9{
-        	      	a{
-                  font-size: 15px;
-                  line-height: 25px;
-                  color:#333333;
-        	      	display: inline-block;
-        	         }
-        	      }  
-        	   }
-        	 .aboutAdress{
-        	   .col-md-3{
-        	 	  .iconMap{
-	                  padding: 12px 18px;
-	                	font-size: 1.8em;
-	                	border-radius: 100%;
-	                	color:$skyBlue;
-	                	background: $lightGray;
-        	 		   }
-        	     	}
-        	     	  .col-md-9{
-        	      	a{
-                    font-size: 15px;
-                    line-height: 25px;
-                    color:#333333;
-        	      	  display: inline-block;
-        	         }
-        	      } 
-        	    }
-            }
-        }
-     }
-  }
-  /*end About TOP*/
-  /*start About content*/
-.aboutContent{
-	font-family: $oswald;
-	position: relative;
-	background: url(..//img/aboutSlide.jpg) no-repeat;
-	background-position: center;
-	background-size: cover;
 
-  .container-fluid{
-   .aboutNav{
-
-   	position: relative;
-   	top:-30px;
-     .container{
-       background: $skyBlue;
-       border-radius: 10px;
-      .row{
-      	.col-md-12{
-      		ul{
-      			margin:0;
-      			margin-left: -15px;
-            list-style: none;
-      			li{
-                &:hover{
-                  background: $orange;
-              }
-      				&:nth-child(2){
-                  	background: #F57E57;
-                  } 
-                    float: left;
-                    line-height: 100%;
-				            cursor: pointer;
-				            padding:16.2px 23px;
-				            font-size: 22px;
-				    
-	                 a{
-						text-decoration: none;
-						color:#F9FDFE;
-						font-size: 17px;
-						font-weight: 400;
-					}
-      			  }
-      		   }
-      	     }
-           }  
-         }
-       }
-       .container{
-       	 &:nth-child(2){
-       	 	color:#fff;
-       	 	ul{
-       	 		padding-bottom: 20px;
-       	 		letter-spacing: 0.04em;
-       	 		li{
-            
-       	 			a{
-       	 				color:#fff;
-       	             }
-       	 			.iconArrow{
-       	 				color:$lightGray;
-       	 			}
-       	 		}
-       	 	}
-       		h1{
-         	   padding: 50px 0;
-         	   font-size: 80px;
-         	   font-weight:400; 
-         	   line-height:1.25;
-         	   letter-spacing: 0.04em;
-
-             }
-       	  }
-       }
-     }
-   }
-   /*end About content*/
-   /*about Us*/
-  .aboutUs{
-  	.container{
-  	  .row{
-  	     padding: 50px 0;
-  	     margin-bottom: 30px;
-  	  	
-         .col-md-8{
-           	.col-md-12{
-           	  h3{
-           	  	padding: 10px 0;
-
-           	   }
-           	    p{
-	          	color: $gray;
-    	        font-size: 15px;
-    	        line-height: 1.6;
-	          	letter-spacing: .3px;
-	          }
-           	 .aboutUnder{
-                padding:3px;
-   	        	width: 110px;
-	        	margin-bottom: 55px;
-	        	background: $orange;           	   
-	           }
-           	 }
-           }
-           .aboutScot{
-           	  h6{
-                color:#434445;
-            	padding-top: 20px;
-            	letter-spacing: 0.06em;
-            	font-size: 18px;
-                font-weight:600;
-             }
-             .col-md-4{
-
-             }
-             .col-md-8{
-             	h5{
-             		font-size: 18px;
-					      font-weight: 600;
-					       color:#18AFD3;
-             	}
-              em{
-                color:$gray;
-              }
-             	.fa-phone{
-                     font-size: 1.8em;
-                     color:#18AFD3;
-                     padding-top: 18px;
- 					}
- 					b{
- 						font-size: 15px;
- 					}
-               }
-               .medicalInfo{
-                 position: relative;
-                 top:10px;
-                 left: 15px;
-                 margin-bottom: 25px;
-                 font-size:15px;
-                 line-height: 22px;
-                 color:$gray;
-               }
-               .aboutBtn{
-                font-size: 16px;
-                background: $orange;
-                border: transparent;
-               	padding: 13px 20px;
-               	border-radius:30px;
-               }	
-           }
-  		}
-  	 }
-   }
-   .aboutAchievments{
-        padding: 30px 0;
-    .container-fluid{
-      .row{
-      .col-md-12{
-          background: #F1F3F9;
-          .col-md-5{
-            img{
-              height: 100%;
-            }
-          }
-        .col-md-7{
-          .awardBest{
-            padding-bottom: 52px;
-          }
-          h1{
-            color:#333333;
-            padding: 15px 0;
-          }
-          padding:65px 0;
-          padding-left: 100px;
-          
-          .col-md-3{
-            padding: 17px 0;
-             .faGrad{
-              padding: 17% 14%;
-            }
-            text-align: center;
-            span{
-              border: 2px solid #fff;
-              border-radius: 100%;
-              font-size: 1.9em;
-              padding: 17% 19.5%;
-              background: $orange;
-              color:white;
-            }
-
-          }
-          .col-md-9{
-              .starAward{
-                padding: 13px 0;
-              }
-            h5{
-                font-size: 21px;
-               line-height: 1.3em;
-               font-weight: 600;
-               color:$skyBlue;
-               
-             }
-          }
-        }
-
-      }
-    }
-   }
- }
- /*about Team*/
-   .aboutTeam{
-    font-family: $oswald;
-    .container-fluid {
-        .container{
-         .aboutAllView{
-               transition: .25s;
-               position: relative;
-               top:0;            
-               }
-           .aboutProfile{
-               cursor: pointer;
-               background: $orange;
-               padding: 20px 30px;
-               position:absolute;
-               bottom:-50px;
-               width: 100%;
-              h5{
-                margin: 0;
-                color:white;
-
-              }
-            }
-        .row{
-          .col-md-12{
-            .container{ 
-               text-align: center;
-              .aboutView{
-                background: $orange;
-                border:none;
-                padding:13px 35px; 
-                margin: 60px 0;
-                font-size: 18px;
-                border-radius: 25px;
-                &:hover{
-                  background: $skyBlue;
-                }
-              }
-            }
-              .row{
-                margin-bottom: 30px;
+#about {
+    .aboutTop {
+        padding-top: 35px;
+        padding-bottom: 65px;
+        .container-fluid {
+            .container {
+                .row {
+               .col-md-3{
                 .col-md-3{
-                    overflow: hidden;
-                  .aboutTeamMember{
-                    background: $skyBlue;
-                    padding: 30px 30px;
-                    position: relative;
-
-                    h5{
-                      font-weight: 700;
-                      font-size: 20px;
-                      color:#fff;
-                      pointer-events:none;
-                    }
-                    em{
-                      font-size: 14px;
-                      color:#fff;
-                      opacity: 0.8;
-                      pointer-events:none;
-                    }
-                  }
-                }
-              }
-            h1{
-              padding-top: 35px;
-              text-align: center;
-              font-weight: 400;
-              font-size: 3.3em;
-              color:#333333;
-            }
-            .aboutUnderLine{
-              position: relative;
-              top:10px;
-              left:46%;
-            }
-
-          }
-        }
-      }
-    }
-   }
-   /*end About TEam*/
-   /*star TEStimonials*/
-   .aboutTestimonials{
-    .container-fluid{
-      background: #F1F3F9;
-      padding-bottom: 50px;
-     .container{
-      .dotItem{
-        .col-md-12{
-          text-align: center;
-          .dot{
-            cursor: pointer;
-              display: inline-block;
-              padding: 2px 5px;
-             i{
-             color:$skyBlue;
-             pointer-events:none;
-           }
-          }
-        }
-      }
-     
-       .row{
-          .col-md-12{ 
-            text-align: center;
-            padding: 80px 0;
-            h1{
-
-           }
-            .aboutUnderLine{
-           left: 46%;
-           width: 100px;
-           margin:20px 0;
-           position: relative;
-           }
-        }
-      }
-        .row{
-          .testiPeople{
-            min-height: 200px;
-            position: relative;
-            display: inline-block;
-            width:100%;
-            &:last-child{
-            }
-           .col-md-4{
-             .col-md-2{
-                padding: 0 20px;
-                  i{
-                  color:$orange;
-                }
-             }
-             .col-md-10{
-               em{
-                color:$gray;
-                font-weight: 400;
-                font-size: 16px;
-               }
-               .container-fluid {
-
-                  padding: 20px 0;
-                .col-md-9{
-                  h5{
-                    color:$skyBlue;
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin: 0;
-                    padding: 3px 0;
-                  }
-                 }
-              }
-            }
-          }
-        }
-      }
-     }
-   }
- }
- /*about footer*/
- .aboutFooter{
-  font-family: $helvetica;
-       background: #038EAF;
-       padding-top: 4% ;
-   .container-fluid{
-    .container{
-      .row{
-        .col-md-4{
-          .container-fluid{
-              ul{
-                padding: 30% 0;
-                li{
-                  list-style:none;
-                  font-size: 18px;
-                  float: left;
-                  color:$gray;
-                  margin-right: 15px;
-                  background: white;
-                  height: 45px;
-                  width: 45px;
-                  text-align: center;
-                  line-height: 43px;
+                span{
+                  height: 50px;
+                  width: 50px;
                   border-radius: 100%;
-
+                  line-height: 50px;
+                  text-align: center;
+                  color: $skyBlue;
+                  font-size:1.4em; 
+                  background: $lightGray;  
+                }
+                }
+                .col-md-9{
+                 a{
+                   color: #333333;
+                   font-weight: 500;
+                   line-height: 26px;
+                   font-size: 1em;
                  }
+                }
                }
-               p{
-                font-size: 15px;
-                font-weight: 400;
-                letter-spacing: 0.04em;
-                color:rgba(255, 255, 255, 0.5);
-               }
-             }
-           }
-           .col-md-4{
-             h5{
-              font-size: 20px;
-              color:#FFF;
-              font-weight: 400;
-             }
-                
-             a{
-              color:#fff;
-              font-size: 15px;
-              font-weight: 500;
-             }
-             .infoDemo{
-              color:$orange;
-              font-size: 15px;
-             }
-             span{
-              padding: 10px 5px;
-              color:$orange;
-             }
-           }
-           .col-md-4{
-            p{
-              font-size: 16px;
-              color:rgba(255, 255, 255, 0.2);
-              padding-bottom: 25px;            }
-            .aboutForm{
-              padding: 22px 0;
-              position: relative;
             }
-            .btnAbout{
-              background: $orange;
-              padding:10.5px 30px;
-              font-weight: 500;
-              border: transparent;
-              position: absolute;
-              bottom:15px;
-              font-size: 18px;
-              right:0;
-            }
-           }
-         }
-       }
-     }
-   }
- }
+        }
+    }
+  }
+    /*end About TOP*/
+    /*start About content*/
+    .aboutContent {
+        font-family: $oswald;
+        position: relative;
+        background: url(..//img/aboutSlide.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        .container-fluid {
+           
+.aboutNav {
+    z-index: 100;
+    position: relative;
+    top: -30px;
+    font-family: 'Oswald', sans-serif;
+    .container {
+        .row {
+            .navBar{
+              border-radius: 7px;
+              box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+                background: #18AFD3;
+                .searchHelp{
+                .navInput{
+                  display: none;
+                  width: 100%;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  border-radius: 7px;
+                  background: $skyBlue;
+                  border: transparent;
+                  padding: 11px 15px;
+                  color:#fff;
+                  font-size: 26px;
+                }
+                .removeSearch{
+                  color:#fff;
+                  position: absolute;
+                  right: 2%;
+                  display: none;
+                  top:4px;
+                  cursor: pointer;
+                  padding: 15px;
+                  font-size: 1.2em;
+                }
+                .navNews{
+                  display: none;
+                  position: absolute;
+                  left: 15px;
+                  color: white;
+                  pointer-events:none;
+                  font-size: 26px;
+                  top:10px;
+                }
+              }
+                ul {
+                    transition: .5s;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    .galleryDrop{
+                      &:hover{
+                        ul{
+                        display: block;
+                      }
+                      .dropIcon{
+                        display: block;
+                      }
+                    }
+                }
+                    li {
+                      ul.drop-down{
 
- 
-.dotActive{
-     border-radius: 100%;
-     background: rgba(24, 175, 211, 0.22);
-     
- }
+                      position: absolute;
+                      top:100%;
+                      left:0%;
+                      width: 100%;
+                      padding:0;
+                      display: none;
+                         
+                        li{
+                  position: relative;
+                  background-color: #f9f9f9;
+                  min-width: 200px;
+                  font-size: 1em;
+                  color:black;
+                  overflow: auto;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  .iconFa{
+                    color:$orange;
+                    display: none;
+                  }
+                  a{
+                    font-size:.9em;
+                    color:$skyBlue;
+                    position: relative;
+                    left:0;
+                    padding: 10px 10px; 
+                  }
+                        }
+                      }
+                        &:hover {
+                         background: $orange;
+                        }
+                        .navSearch{
+                          font-size: 1em;
+                          position: absolute;
+                          right: 15px;
+                            top:7px;
+                          
+                          padding: 15px 0;
+                        }
+                        &:last-child{
+                          background: transparent;
+                        }
+                        float: left;
+                        line-height: 100%;
+                        cursor: pointer;
+                        padding:20px 24px;
+                        font-size: 16px;
+                        position: relative;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #F9FDFE;
+                        font-size: 1em;
+                        font-weight: 400;
+                    }
+                    i {
+                        font-size: .5em;
+                        color: #fff;
+                        line-height: 10px;
+                        margin-left: 5px;
+                    }
+                }
+                .activeNav{
+                  background: $orange;
+                }
+            }
+            .pageDown {
+                transition:all .2s ease-in-out;
+                display: none;
+                background: #FFF;
+                position: absolute;
+                min-width: 1165px;
+                top:100%;
+                z-index: -66;
+                font-family: $helvetica;
+                .container-fluid {
+                    .row {
+                        .col-md-4 {
+                            h4 {
+                                font-weight: 500;
+                            }
+                            ul {
+                                padding: 0;
+                                list-style: none;
+                                li {
+                                  &:hover{
+                                    a{
+                                  color: $orange;
+                                  }
+                                }
+                                    position: relative;
+                                    cursor: pointer;
+                                    font-weight: 500;
+                                    line-height: 45px;
+                                }
+                                .dropIcon {
+                                    color: $orange;
+                                    font-size: .7em;
+                                    display: none;
+                                    position: relative;
+                                    pointer-events: none;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    position: relative;
+                                    left: 0;
+                                    color:$skyBlue;
+                                    padding: 12px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+            .aboutModern {
+                &:nth-child(2) {
+                    color: #fff;
+                    ul {
+                        padding-bottom: 20px;
+                        letter-spacing: 0.04em;
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                            .iconArrow {
+                                color: $lightGray;
+                            }
+                        }
+                    }
+                    h1 {
+                        padding: 55px 0;
+                        font-size: 80px;
+                        font-weight: 400;
+                        line-height: 1.25;
+                        letter-spacing: 0.04em;
+                    }
+                }
+            }
+        }
+    }
+    /*end About content*/
+    /*about Us*/
+    .aboutUs {
+        .container {
+            .row {
+                padding: 50px 0;
+                margin-bottom: 30px;
+                .col-md-8 {
+                    .col-md-12 {
+                        h3 {
+                            padding: 10px 0;
+                        }
+                        p {
+                            color: $gray;
+                            font-size: 15px;
+                            line-height: 1.6;
+                            letter-spacing: .3px;
+                        }
+                        .aboutUnder {
+                            padding: 3px;
+                            width: 110px;
+                            margin-bottom: 55px;
+                            background: $orange;
+                        }
+                    }
+                }
+                .aboutScot {
+                    h6 {
+                        color: #434445;
+                        padding-top: 20px;
+                        letter-spacing: 0.06em;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    .col-md-4 {}
+                    .col-md-8 {
+                        h5 {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #18AFD3;
+                          }
+                        em {
+                            color: $gray;
+                        }
+                        .fa-phone {
+                            font-size: 1.8em;
+                            color: #18AFD3;
+                            padding-top: 18px;
+                        }
+                        b {
+                            font-size: 15px;
+                        }
+                    }
+                    .medicalInfo {
+                        position: relative;
+                        top: 10px;
+                        left: 15px;
+                        margin-bottom: 25px;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: $gray;
+                    }
+                    .aboutBtn {
+                        font-size: 16px;
+                        background: $orange;
+                        border: transparent;
+                        padding: 13px 20px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .aboutAchievments {
+        background:#f1f3f9;
+        #achivback{
+            .col-md-5{
+               background: url(..//img/about3.jpg)no-repeat;
+               background-position: center;
+               background-size: cover;
+               height: 525px;
+            }
+        }
+          
+        .rightAchive { 
+                padding-top: 7.5%;
+                padding-left:6%;
+               .achiveHood{
+                h1{
+                  font-size: 1.9em;
+                  font-weight: 600;
+                }
+                }
+            .row {
+              padding-bottom: 6.8%;
+                .col-lg-6 {
+                  .col-md-3{
+                          span {
+                            height: 55px;
+                            width: 55px;  
+                            border-radius: 100%;
+                            line-height: 54px;
+                            text-align: center;
+                            background: $orange;
+                            border: 2px solid white;
+                            font-size: 1.3em;
+                               i{
+
+                                color: #fff;  
+                           }
+                        }
+                      }
+                    }
+                      .col-md-8 {
+                        span{
+                          p{
+                            color:$skyBlue;
+                            font-size: 1.46em;
+                            font-weight: 600;
+                          }
+                          .achiveFirst{
+                            // margin-top: -10px;
+                          }
+                          .achivSec{
+                            margin-top: 15px;
+                          }
+                      }
+                    }
+                }
+            }
+        }
+  
+    /*about Team*/
+    .aboutTeam {
+        font-family: $oswald;
+        .container-fluid {
+            .container {
+                .aboutAllView {
+                    transition: .25s;
+                    position: relative;
+                    top: 0;
+                }
+                .aboutProfile {
+                    cursor: pointer;
+                    background: $orange;
+                    padding: 20px 30px;
+                    position: absolute;
+                    bottom: -50px;
+                    width: 100%;
+                    h5 {
+                        margin: 0;
+                        color: white;
+                    }
+                }
+                .row {
+                    .col-md-12 {
+                        .container {
+                            text-align: center;
+                            .aboutView {
+                                background: $orange;
+                                border: none;
+                                padding: 13px 35px;
+                                margin: 60px 0;
+                                font-size: 1.1em;
+                                border-radius: 25px;
+                                &:hover {
+                                    background: $skyBlue;
+                                }
+                            }
+                        }
+                        .row {
+                            margin-bottom: 30px;
+                            .col-lg-3 {
+                              img{
+                                width: 100%;
+                              }
+                                overflow: hidden;
+                                .aboutTeamMember {
+                                    font-size: 1.1em;
+                                    background: $skyBlue;
+                                    padding: 30px 0px;
+                                    padding-left:30px;
+                                    position: relative;
+                                    h5 {
+                                        font-weight: 700;
+                                        font-size: 20px;
+                                        color: #fff;
+                                        pointer-events: none;
+                                    }
+                                    em {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        opacity: 0.8;
+                                        pointer-events: none;
+                                    }
+                                }
+                            }
+                        }
+                        h1 {
+                            padding-top: 35px;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 3.3em;
+                            color: #333333;
+                        }
+                        .aboutUnderLine {
+                            position: relative;
+                            top: 10px;
+                            left: 46%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*end About TEam*/
+    /*star TEStimonials*/
+    .aboutTestimonials {
+        .container-fluid {
+            background: #F1F3F9;
+            padding-bottom: 50px;
+            .container {
+                .dotItem {
+                    .col-md-12 {
+                        text-align: center;
+                        .dot {
+                            cursor: pointer;
+                            display: inline-block;
+                            padding: 2px 5px;
+                            i {
+                                color: $skyBlue;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+                .row {
+                    .col-md-12 {
+                        text-align: center;
+                        padding: 80px 0;
+                        .aboutUnderLine {
+                            left: 46%;
+                            width: 100px;
+                            margin: 20px 0;
+                            position: relative;
+                        }
+                    }
+                }
+                .row {
+                    .testiPeople {
+                        min-height: 200px;
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        &:last-child {}
+                        .col-md-4 {
+                            .col-md-2 {
+                                padding: 0 20px;
+                                i {
+                                    color: $orange;
+                                }
+                            }
+                            .col-md-10 {
+                                em {
+                                    color: $gray;
+                                    font-weight: 400;
+                                    font-size: 0.9em;
+                                }
+                                .container-fluid {
+                                    padding: 20px 0;
+                                    .col-md-9 {
+                                        h5 {
+                                            color: $skyBlue;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            margin: 0;
+                                            padding: 3px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*about footer*/
+    .aboutFooter {
+        font-family: $helvetica;
+        background: #038EAF;
+        padding-top: 4%;
+        .container-fluid {
+            .container {
+                .row {
+                    .col-md-4 {
+                        .container-fluid {
+                            ul {
+                                padding: 30% 0;
+                                li {
+                                    list-style: none;
+                                    font-size: 18px;
+                                    float: left;
+                                    color: $gray;
+                                    margin-right: 15px;
+                                    background: white;
+                                    height: 45px;
+                                    width: 45px;
+                                    text-align: center;
+                                    line-height: 43px;
+                                    border-radius: 100%;
+                                }
+                            }
+                            p {
+                                font-size: 15px;
+                                font-weight: 400;
+                                letter-spacing: 0.04em;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+                    }
+                    .col-md-4 {
+                        h5 {
+                            font-size: 20px;
+                            color: #FFF;
+                            font-weight: 400;
+                        }
+                        a {
+                            color: #fff;
+                            font-size: 0.9em;
+                            font-weight: 500;
+                        }
+                        .infoDemo {
+                            color: $orange;
+                            font-size: 15px;
+                        }
+                        span {
+                            padding: 10px 5px;
+                            color: $orange;
+                        }
+                    }
+                    .col-md-4 {
+                        p {
+                            font-size: 1em;
+                            color: rgba(255, 255, 255, 0.2);
+                            padding-bottom: 20px;
+                            padding-top: 10px;
+                        }
+                        .aboutForm {
+                            padding: 25px 0;
+                            position: relative;
+                        }
+                        .btnAbout {
+                            background: $orange;
+                            padding: 13.5px 30px;
+                            font-weight: 500;
+                            border: transparent;
+                            position: absolute;
+                            bottom: 15px;
+                            font-size: 18px ;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.dotActive {
+    border-radius: 100%;
+    background: rgba(24, 175, 211, 0.22);
+}
+
+
 /*about end*/
