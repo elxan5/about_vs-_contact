@@ -37,15 +37,18 @@ $(function(){
   /*start navbar*/
 $(function(){
   $(".navBar ul li").hover(function() {
+     $('.pageMain').removeClass('activeNav')
     $('.pageDown').hide()
 });
 $('.pageMain').hover(function() {
+      $(this).addClass('activeNav')
     $('.pageDown').show()
 
 });
 $('.pageDown').on({
     mouseleave: function() {
         $(this).hide()
+        $('.pageMain').removeClass('activeNav')
     }
 })
 $('.pageDown ul li a').on({
