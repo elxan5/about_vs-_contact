@@ -77,7 +77,7 @@ body {
       z-index: 100;
       position: relative;
       top: -30px;
-      font-family: 'Oswald', sans-serif; }
+      font-family: "Oswald", sans-serif; }
       #about .aboutContent .container-fluid .aboutNav .container .row .navBar {
         border-radius: 7px;
         box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
@@ -137,8 +137,9 @@ body {
               #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li {
                 position: relative;
                 background-color: #f9f9f9;
-                min-width: 200px;
-                font-size: 1em;
+                min-width: 220px;
+                font-size: 1.06em;
+                padding: 15px 10px;
                 color: black;
                 overflow: auto;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
@@ -149,8 +150,8 @@ body {
                   font-size: .9em;
                   color: #18AFD3;
                   position: relative;
-                  left: 0;
-                  padding: 10px 10px; }
+                  padding: 10px 15px;
+                  left: 0; }
             #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li:hover {
               background: #F57E57; }
             #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li .navSearch {
@@ -296,7 +297,7 @@ body {
             color: #fff; }
         #about .aboutAchievments .rightAchive .row .col-md-8 span p {
           color: #18AFD3;
-          font-size: 1.46em;
+          font-size: 1.6em;
           font-weight: 600; }
         #about .aboutAchievments .rightAchive .row .col-md-8 span .achivSec {
           margin-top: 15px; }

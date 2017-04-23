@@ -120,7 +120,7 @@ body {
                 .removeSearch{
                   color:#fff;
                   position: absolute;
-                  right: 2%;
+                  right: 3%;
                   display: none;
                   top:4px;
                   cursor: pointer;
@@ -153,6 +153,7 @@ body {
                     }
                 }
                     li {
+                    
                   .activeNav{
                         background: $orange;
                 }
@@ -160,11 +161,11 @@ body {
                           font-size: 1em;
                           position: absolute;
                           right: 15px;
-                            top:7px;
-                          color:red;
-                          z-index: 110;
+                          top:3px;
+                          color:#fff;
                           padding: 15px 0;
                         }
+                     
                       ul.drop-down{
 
                        position: absolute;
@@ -177,10 +178,11 @@ body {
                         li{
                          position: relative;
                          background-color: #fff;
-                         min-width: 200px;
+                         min-width: 210px;
                          color:black;
+                         padding: 15px 10px;
                          overflow: auto;
-                         font-size: 1.1em;
+                         font-size: .9em;
                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                   .iconFa{
                     color:$orange;
@@ -204,6 +206,9 @@ body {
                         padding:20px 24px;
                         font-size: 18px;
                         position: relative;
+                        &:last-child{
+                          background: transparent;
+                        }
 
                     }
                     a {
@@ -405,7 +410,8 @@ body {
             .container {
             	.col-md-12{
                 .row {
-                	padding: 50px 0;
+                	padding-top: 60px;
+                  padding-bottom: 30px;
                     .col-md-4 {
                         h5{
                     	   padding-bottom: 10px;

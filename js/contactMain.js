@@ -107,9 +107,9 @@ $(function(){
                $(this).hide();
                $('.navNews').hide()
                  $('.removeSearch').hide();
-     })
-  })
-  $('.aboutModern').click(function(){
+     });
+  });
+  $('#contactImg').click(function(){
       $('.navInput').fadeOut(250);
          $('.navNews').hide()
                  $('.removeSearch').hide();
@@ -120,3 +120,4 @@ $(function(){
             },10)
   })
 })
+/*end navbar*/

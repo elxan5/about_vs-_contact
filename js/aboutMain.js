@@ -32,6 +32,9 @@ $(function(){
     });
 
 });
+/*end testimonials*/
+
+  /*start navbar*/
 $(function(){
   $(".navBar ul li").hover(function() {
     $('.pageDown').hide()
@@ -65,9 +68,9 @@ $('.drop-down li a').on({
     mouseover: function() {
         dropIndex = $('.drop-down li a').index($(this));
         $(this).css({
-            "left": "5px",
+            "left": "7px",
             'transition': 'all .1s ease-in-out',
-            'color': '#F57E57'
+            'color': '#F57E57'  
         })
         $('.iconFa:eq(' + dropIndex + ')').show();
     },
@@ -81,6 +84,7 @@ $('.drop-down li a').on({
     }
 });
 });
+
 $(function(){
   $('.rd-navBar').click(function(){
     $('.navInput').fadeIn(250);
@@ -116,3 +120,4 @@ $(function(){
             },10)
   });
 });
+/*end navbar*/

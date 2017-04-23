@@ -85,7 +85,7 @@ body {
     #contact .aboutNav .container .row .navBar .searchHelp .removeSearch {
       color: #fff;
       position: absolute;
-      right: 2%;
+      right: 3%;
       display: none;
       top: 4px;
       cursor: pointer;
@@ -121,9 +121,8 @@ body {
           font-size: 1em;
           position: absolute;
           right: 15px;
-          top: 7px;
-          color: red;
-          z-index: 110;
+          top: 3px;
+          color: #fff;
           padding: 15px 0; }
         #contact .aboutNav .container .row .navBar ul li ul.drop-down {
           position: absolute;
@@ -135,10 +134,11 @@ body {
           #contact .aboutNav .container .row .navBar ul li ul.drop-down li {
             position: relative;
             background-color: #fff;
-            min-width: 200px;
+            min-width: 210px;
             color: black;
+            padding: 15px 10px;
             overflow: auto;
-            font-size: 1.1em;
+            font-size: .9em;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
             #contact .aboutNav .container .row .navBar ul li ul.drop-down li .iconFa {
               color: #F57E57;
@@ -151,6 +151,8 @@ body {
               padding: 10px 10px; }
         #contact .aboutNav .container .row .navBar ul li:hover {
           background: #F57E57; }
+        #contact .aboutNav .container .row .navBar ul li:last-child {
+          background: transparent; }
       #contact .aboutNav .container .row .navBar ul a {
         text-decoration: none;
         color: #F9FDFE;
@@ -289,7 +291,8 @@ body {
 #contact .contactFooter .container-fluid {
   background: #038EAF; }
   #contact .contactFooter .container-fluid .container .col-md-12 .row {
-    padding: 50px 0; }
+    padding-top: 60px;
+    padding-bottom: 30px; }
     #contact .contactFooter .container-fluid .container .col-md-12 .row .col-md-4 h5 {
       padding-bottom: 10px;
       font-size: 20px;
