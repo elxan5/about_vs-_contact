@@ -10,12 +10,7 @@
 .navFixed {
   position: fixed;
   top: 0;
-  width: 100%;
-  left: 0;
-  padding-left: 12%; }
-
-body {
-  transition: all 2s; }
+  width: 100%; }
 
 .footer-hr {
   position: relative;
@@ -33,7 +28,8 @@ body {
     background: #F57E57; }
 
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif; }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  transition: all 2s ease; }
 
 .contactUnderLine {
   margin-bottom: 60px;
@@ -41,6 +37,8 @@ body {
   width: 80px;
   background: #F57E57; }
 
+#contact #mainModal {
+  z-index: 90; }
 #contact .contactTop {
   padding-top: 35px;
   padding-bottom: 5px; }
@@ -79,7 +77,7 @@ body {
       border-radius: 7px;
       background: #18AFD3;
       border: transparent;
-      padding: 11px 15px;
+      padding: 12px 15px;
       color: #fff;
       font-size: 26px; }
     #contact .aboutNav .container .row .navBar .searchHelp .removeSearch {
@@ -112,13 +110,14 @@ body {
         float: left;
         line-height: 100%;
         cursor: pointer;
-        padding: 20px 24px;
-        font-size: 18px;
+        padding: 21px 24px;
+        font-weight: 900;
+        font-size: 1.26em;
         position: relative; }
         #contact .aboutNav .container .row .navBar ul li .activeNav {
           background: #F57E57; }
         #contact .aboutNav .container .row .navBar ul li .navSearch {
-          font-size: 1em;
+          font-size: .9em;
           position: absolute;
           right: 15px;
           top: 3px;
@@ -134,9 +133,9 @@ body {
           #contact .aboutNav .container .row .navBar ul li ul.drop-down li {
             position: relative;
             background-color: #fff;
-            min-width: 210px;
+            min-width: 225px;
             color: black;
-            padding: 15px 10px;
+            padding: 18px 10px;
             overflow: auto;
             font-size: .9em;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
@@ -144,8 +143,8 @@ body {
               color: #F57E57;
               display: none; }
             #contact .aboutNav .container .row .navBar ul li ul.drop-down li a {
-              font-size: 1em;
               color: #18AFD3;
+              font-weight: 400;
               position: relative;
               left: 0;
               padding: 10px 10px; }
@@ -203,7 +202,7 @@ body {
         font-size: 1.1em;
         left: 0;
         color: #18AFD3;
-        padding: 15px 0px; }
+        padding: 15px 0; }
 #contact #contactImg {
   background: url(..//img/aboutSlide.jpg);
   background-position: center;

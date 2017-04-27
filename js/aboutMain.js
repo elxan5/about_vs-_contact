@@ -1,3 +1,23 @@
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 130) {
+        $('#allNav').addClass('navFixed');
+             $('.navBar').css('border-radius',0);
+        $('.pageDown').css('margin-left','10%');
+        $('.navBar>ul').css({
+            'padding-left': '11%',
+            'transition': '.3s ease-in-out'
+        })
+    } else {
+        $('.pageDown').css('margin-left',0);
+        $('#allNav').removeClass('navFixed')
+        $('.navBar').css('border-radius','7px');
+        $('.navBar>ul').css({
+            'padding-left': 0,
+            'transition': '.01s'
+        })
+    }
+
+})
 $(document).ready(function(){
    /*Our team*/
   $('.aboutProfile').hide();
@@ -88,39 +108,41 @@ $('.drop-down li a').on({
 });
 });
 
-$(function(){
-  $('.rd-navBar').click(function(){
-    $('.navInput').fadeIn(250);
-        $('.removeSearch').show();
+$(function() {
+        $('.rd-navBar').click(function() {
+            $('.modal').show();
+            $('.navInput').fadeIn(250);
+            $('.removeSearch').show();
             $('.navNews').show();
-            $('.navInput').click(function(){
-              $('.navNews').animate({
-                'top':'0',
-                 'font-size':'12px'
-            },250)
+            $('.navInput').click(function() {
+                $('.navNews').animate({
+                    'top': '0',
+                    'font-size': '12px'
+                }, 250)
+            })
+
+            $('.removeSearch').click(function() {
+                $('.navInput').fadeOut(250);
+                $('.navNews').animate({
+                    'top': '10px',
+                    'font-size': '26px'
+                }, 10)
+
+                $(this).hide();
+                $('.navNews').hide()
+                $('.removeSearch').hide();
+            });
+        });
+        $('#mainModal').click(function() {
+            $(this).hide();
+            $('.navInput').fadeOut(250);
+            $('.navNews').hide()
+            $('.removeSearch').hide();
+            $('.navInput').fadeOut(250);
+            $('.navNews').animate({
+                'top': '10px',
+                'font-size': '26px'
+            }, 10)
         })
-
-     $('.removeSearch').click(function(){
-             $('.navInput').fadeOut(250);
-                  $('.navNews').animate({
-                     'top':'10px',
-                     'font-size':'26px'
-            },10)
-
-               $(this).hide();
-               $('.navNews').hide()
-                 $('.removeSearch').hide();
-     });
-  });
-  $('.aboutModern').click(function(){
-      $('.navInput').fadeOut(250);
-         $('.navNews').hide()
-                 $('.removeSearch').hide();
-                   $('.navInput').fadeOut(250);
-                  $('.navNews').animate({
-                     'top':'10px',
-                     'font-size':'26px'
-            },10)
-  });
-});
+    })
 /*end navbar*/

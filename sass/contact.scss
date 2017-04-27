@@ -25,12 +25,10 @@ sans-serif;
 	position: fixed;
 	top:0;
 	width: 100%;
-	left:0;
-    padding-left: 12%;
+	// left:0;
+    
 }
-body{
-	transition:all 2s;
-}
+
 
 .footer-hr {
     position: relative;
@@ -51,6 +49,8 @@ body{
 
 body {
     font-family: $helvetica;
+      transition:all 2s ease;
+
 }
 
 .contactUnderLine {
@@ -61,6 +61,9 @@ body {
 }
 
 #contact {
+  #mainModal{
+    z-index: 90;
+  }
     .contactTop {
         padding-top: 35px;
         padding-bottom: 5px;
@@ -113,7 +116,7 @@ body {
                   border-radius: 7px;
                   background: $skyBlue;
                   border: transparent;
-                  padding: 11px 15px;
+                  padding: 12px 15px;
                   color:#fff;
                   font-size: 26px;
                 }
@@ -158,7 +161,7 @@ body {
                         background: $orange;
                 }
                   .navSearch{
-                          font-size: 1em;
+                          font-size: .9em;
                           position: absolute;
                           right: 15px;
                           top:3px;
@@ -167,7 +170,6 @@ body {
                         }
                      
                       ul.drop-down{
-
                        position: absolute;
                        top:100%;
                        left:0%;
@@ -178,9 +180,9 @@ body {
                         li{
                          position: relative;
                          background-color: #fff;
-                         min-width: 210px;
+                         min-width: 225px;
                          color:black;
-                         padding: 15px 10px;
+                         padding: 18px 10px;
                          overflow: auto;
                          font-size: .9em;
                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -189,8 +191,8 @@ body {
                     display: none;
                   }
                   a{
-                    font-size:1em;
                      color:$skyBlue;
+                    font-weight: 400;
                     position: relative;
                     left:0;
                     padding: 10px 10px; 
@@ -203,8 +205,9 @@ body {
                         float: left;
                         line-height: 100%;
                         cursor: pointer;
-                        padding:20px 24px;
-                        font-size: 18px;
+                        padding:21px 24px;
+                        font-weight: 900;
+                        font-size: 1.26em;
                         position: relative;
                         &:last-child{
                           background: transparent;
@@ -219,7 +222,6 @@ body {
                     i {
                         font-size: .5em;
                         color: #fff;
-                        
                         margin-left: 5px;
                     }
                 }
@@ -262,7 +264,7 @@ body {
                                      right: 15px;
                                      top:7px;
                                      padding: 15px 0;
-                        }
+                                    }
                                 }
                                 .dropIcon {
                                     color: $orange;
@@ -277,7 +279,7 @@ body {
                                     font-size: 1.1em;
                                     left: 0;
                                     color:$skyBlue;
-                                    padding: 15px 0px;
+                                    padding: 15px 0;
                                 }
                             }
                         }
@@ -286,7 +288,7 @@ body {
             }
         }
     }
-        }
+  }
     #contactImg {
         	  background: url(..//img/aboutSlide.jpg);
         	  background-position: center;

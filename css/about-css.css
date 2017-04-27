@@ -20,6 +20,11 @@
     width: 50px;
     background: #F57E57; }
 
+.navFixed {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 .padLeft {
   padding-left: 0; }
 
@@ -30,9 +35,7 @@
   background: #F57E57; }
 
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  letter-spacing: 1px; }
+  font-family: "Lato", Helvetica, Arial, sans-serif; }
 
 .padding-rm {
   padding: 0; }
@@ -50,178 +53,197 @@ body {
   /*end About TEam*/
   /*star TEStimonials*/
   /*about footer*/ }
-  #about .aboutTop {
+  #about #mainModal {
+    z-index: 90; }
+  #about .contactTop {
     padding-top: 35px;
-    padding-bottom: 65px; }
-    #about .aboutTop .container-fluid .container .row .col-md-3 .col-md-3 span {
-      height: 50px;
-      width: 50px;
-      border-radius: 100%;
-      line-height: 50px;
-      text-align: center;
-      color: #18AFD3;
-      font-size: 1.4em;
-      background: #E5E5E5; }
-    #about .aboutTop .container-fluid .container .row .col-md-3 .col-md-9 a {
-      color: #333333;
-      font-weight: 500;
-      line-height: 26px;
-      font-size: 1em; }
+    padding-bottom: 5px; }
+    #about .contactTop .container .row .col-md-3 span {
+      margin-right: 10px; }
+      #about .contactTop .container .row .col-md-3 span a {
+        color: #333333;
+        font-weight: 400;
+        line-height: 26px;
+        font-size: 1.1em; }
+      #about .contactTop .container .row .col-md-3 span i {
+        color: #18AFD3; }
+      #about .contactTop .container .row .col-md-3 span:first-child {
+        font-size: .8em;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        line-height: 60px;
+        text-align: center;
+        background: #E5E5E5; }
+  #about .aboutNav {
+    z-index: 100;
+    position: relative;
+    top: 30px;
+    font-family: "Oswald", sans-serif; }
+    #about .aboutNav .container .row .navBar {
+      box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 7px;
+      background: #18AFD3; }
+      #about .aboutNav .container .row .navBar .searchHelp .navInput {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 7px;
+        background: #18AFD3;
+        border: transparent;
+        padding: 12px 15px;
+        color: #fff;
+        font-size: 26px; }
+      #about .aboutNav .container .row .navBar .searchHelp .removeSearch {
+        color: #fff;
+        position: absolute;
+        right: 3%;
+        display: none;
+        top: 4px;
+        cursor: pointer;
+        padding: 15px;
+        font-size: 1.2em; }
+      #about .aboutNav .container .row .navBar .searchHelp .navNews {
+        display: none;
+        position: absolute;
+        left: 15px;
+        color: white;
+        pointer-events: none;
+        font-size: 26px;
+        top: 10px; }
+      #about .aboutNav .container .row .navBar ul {
+        transition: .5s;
+        padding: 0;
+        margin: 0;
+        list-style: none; }
+        #about .aboutNav .container .row .navBar ul .galleryDrop:hover ul {
+          display: block; }
+        #about .aboutNav .container .row .navBar ul .galleryDrop:hover .dropIcon {
+          display: block; }
+        #about .aboutNav .container .row .navBar ul li {
+          float: left;
+          line-height: 100%;
+          cursor: pointer;
+          padding: 21px 24px;
+          font-weight: 900;
+          font-size: 1.26em;
+          position: relative; }
+          #about .aboutNav .container .row .navBar ul li .activeNav {
+            background: #F57E57; }
+          #about .aboutNav .container .row .navBar ul li .navSearch {
+            font-size: .9em;
+            position: absolute;
+            right: 15px;
+            top: 3px;
+            color: #fff;
+            padding: 15px 0; }
+          #about .aboutNav .container .row .navBar ul li ul.drop-down {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            width: 100%;
+            padding: 0;
+            display: none; }
+            #about .aboutNav .container .row .navBar ul li ul.drop-down li {
+              position: relative;
+              background-color: #fff;
+              min-width: 225px;
+              color: black;
+              padding: 18px 10px;
+              overflow: auto;
+              font-size: .9em;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+              #about .aboutNav .container .row .navBar ul li ul.drop-down li .iconFa {
+                color: #F57E57;
+                display: none; }
+              #about .aboutNav .container .row .navBar ul li ul.drop-down li a {
+                color: #18AFD3;
+                font-weight: 400;
+                position: relative;
+                left: 0;
+                padding: 10px 10px; }
+          #about .aboutNav .container .row .navBar ul li:hover {
+            background: #F57E57; }
+          #about .aboutNav .container .row .navBar ul li:last-child {
+            background: transparent; }
+        #about .aboutNav .container .row .navBar ul a {
+          text-decoration: none;
+          color: #F9FDFE;
+          font-weight: 400; }
+        #about .aboutNav .container .row .navBar ul i {
+          font-size: .5em;
+          color: #fff;
+          margin-left: 5px; }
+      #about .aboutNav .container .row .navBar .activeNav {
+        background: #F57E57; }
+    #about .aboutNav .container .row .pageDown {
+      transition: all .2s ease-in-out;
+      display: none;
+      background: #FFF;
+      position: absolute;
+      min-width: 1165px;
+      top: 100%;
+      z-index: -66;
+      font-family: "Lato", Helvetica, Arial, sans-serif; }
+      #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 h4 {
+        font-weight: 500; }
+      #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul {
+        padding: 0;
+        list-style: none; }
+        #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li {
+          position: relative;
+          cursor: pointer;
+          font-weight: 500;
+          padding: 5px 0;
+          line-height: 38px; }
+          #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li:hover a {
+            color: #F57E57; }
+          #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li .navSearch {
+            font-size: 1em;
+            position: absolute;
+            right: 15px;
+            top: 7px;
+            padding: 15px 0; }
+        #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul .dropIcon {
+          color: #F57E57;
+          font-size: .7em;
+          display: none;
+          position: relative;
+          pointer-events: none; }
+        #about .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul a {
+          text-decoration: none;
+          position: relative;
+          font-size: 1.1em;
+          left: 0;
+          color: #18AFD3;
+          padding: 15px 0; }
   #about .aboutContent {
     font-family: "Oswald", sans-serif;
     position: relative;
     background: url(..//img/aboutSlide.jpg) no-repeat;
     background-position: center;
     background-size: cover; }
-    #about .aboutContent .container-fluid .aboutNav {
-      z-index: 100;
-      position: relative;
-      top: -30px;
-      font-family: "Oswald", sans-serif; }
-      #about .aboutContent .container-fluid .aboutNav .container .row .navBar {
-        border-radius: 7px;
-        box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
-        background: #18AFD3; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .searchHelp .navInput {
-          display: none;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          right: 0;
-          border-radius: 7px;
-          background: #18AFD3;
-          border: transparent;
-          padding: 11px 15px;
-          color: #fff;
-          font-size: 26px; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .searchHelp .removeSearch {
-          color: #fff;
-          position: absolute;
-          right: 2%;
-          display: none;
-          top: 4px;
-          cursor: pointer;
-          padding: 15px;
-          font-size: 1.2em; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .searchHelp .navNews {
-          display: none;
-          position: absolute;
-          left: 15px;
-          color: white;
-          pointer-events: none;
-          font-size: 26px;
-          top: 10px; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul {
-          transition: .5s;
-          padding: 0;
-          margin: 0;
-          list-style: none; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul .galleryDrop:hover ul {
-            display: block; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul .galleryDrop:hover .dropIcon {
-            display: block; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li {
-            float: left;
-            line-height: 100%;
-            cursor: pointer;
-            padding: 20px 24px;
-            font-size: 16px;
-            position: relative; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down {
-              position: absolute;
-              top: 100%;
-              left: 0%;
-              width: 100%;
-              padding: 0;
-              display: none; }
-              #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li {
-                position: relative;
-                background-color: #f9f9f9;
-                min-width: 220px;
-                font-size: 1.06em;
-                padding: 15px 10px;
-                color: black;
-                overflow: auto;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
-                #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li .iconFa {
-                  color: #F57E57;
-                  display: none; }
-                #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li ul.drop-down li a {
-                  font-size: .9em;
-                  color: #18AFD3;
-                  position: relative;
-                  padding: 10px 15px;
-                  left: 0; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li:hover {
-              background: #F57E57; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li .navSearch {
-              font-size: 1em;
-              position: absolute;
-              right: 15px;
-              top: 7px;
-              padding: 15px 0; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul li:last-child {
-              background: transparent; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul a {
-            text-decoration: none;
-            color: #F9FDFE;
-            font-size: 1em;
-            font-weight: 400; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .navBar ul i {
-            font-size: .5em;
-            color: #fff;
-            line-height: 10px;
-            margin-left: 5px; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .navBar .activeNav {
-          background: #F57E57; }
-      #about .aboutContent .container-fluid .aboutNav .container .row .pageDown {
-        transition: all .2s ease-in-out;
-        display: none;
-        background: #FFF;
-        position: absolute;
-        min-width: 1165px;
-        top: 100%;
-        z-index: -66;
-        font-family: "Lato", Helvetica, Arial, sans-serif; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 h4 {
-          font-weight: 500; }
-        #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul {
-          padding: 0;
-          list-style: none; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li {
-            position: relative;
-            cursor: pointer;
-            font-weight: 500;
-            line-height: 45px; }
-            #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul li:hover a {
-              color: #F57E57; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul .dropIcon {
-            color: #F57E57;
-            font-size: .7em;
-            display: none;
-            position: relative;
-            pointer-events: none; }
-          #about .aboutContent .container-fluid .aboutNav .container .row .pageDown .container-fluid .row .col-md-4 ul a {
-            text-decoration: none;
-            position: relative;
-            left: 0;
-            color: #18AFD3;
-            padding: 12px 0px; }
-    #about .aboutContent .container-fluid .aboutModern:nth-child(2) {
+    #about .aboutContent .aboutModern {
       color: #fff; }
-      #about .aboutContent .container-fluid .aboutModern:nth-child(2) ul {
-        padding-bottom: 20px;
-        letter-spacing: 0.04em; }
-        #about .aboutContent .container-fluid .aboutModern:nth-child(2) ul li a {
+      #about .aboutContent .aboutModern ul {
+        list-style-type: none;
+        padding-top: 2.7%;
+        padding-bottom: 25px;
+        font-size: 14px;
+        font-weight: 400; }
+        #about .aboutContent .aboutModern ul li a {
           color: #fff; }
-        #about .aboutContent .container-fluid .aboutModern:nth-child(2) ul li .iconArrow {
+        #about .aboutContent .aboutModern ul li .iconArrow {
           color: #E5E5E5; }
-      #about .aboutContent .container-fluid .aboutModern:nth-child(2) h1 {
-        padding: 55px 0;
+      #about .aboutContent .aboutModern h1 {
+        font-family: 'PT Sans', sans-serif;
+        padding-top: 7%;
+        color: white;
+        font-weight: 500;
         font-size: 80px;
-        font-weight: 400;
-        line-height: 1.25;
-        letter-spacing: 0.04em; }
+        line-height: 1.85; }
   #about .aboutUs .container .row {
     padding: 50px 0;
     margin-bottom: 30px; }
@@ -297,7 +319,7 @@ body {
             color: #fff; }
         #about .aboutAchievments .rightAchive .row .col-md-8 span p {
           color: #18AFD3;
-          font-size: 1.6em;
+          font-size: 1.8em;
           font-weight: 600; }
         #about .aboutAchievments .rightAchive .row .col-md-8 span .achivSec {
           margin-top: 15px; }
@@ -402,59 +424,64 @@ body {
           margin: 0;
           padding: 3px 0; }
   #about .aboutFooter {
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    background: #038EAF;
-    padding-top: 4%; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 .container-fluid ul {
-      padding: 30% 0; }
-      #about .aboutFooter .container-fluid .container .row .col-md-4 .container-fluid ul li {
-        list-style: none;
-        font-size: 18px;
-        float: left;
-        color: #868686;
-        margin-right: 15px;
-        background: white;
-        height: 45px;
-        width: 45px;
-        text-align: center;
-        line-height: 43px;
-        border-radius: 100%; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 .container-fluid p {
-      font-size: 15px;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      color: rgba(255, 255, 255, 0.5); }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 h5 {
-      font-size: 20px;
-      color: #FFF;
-      font-weight: 400; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 a {
-      color: #fff;
-      font-size: 0.9em;
-      font-weight: 500; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 .infoDemo {
-      color: #F57E57;
-      font-size: 15px; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 span {
-      padding: 10px 5px;
-      color: #F57E57; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 p {
-      font-size: 1em;
-      color: rgba(255, 255, 255, 0.2);
-      padding-bottom: 20px;
-      padding-top: 10px; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 .aboutForm {
-      padding: 25px 0;
-      position: relative; }
-    #about .aboutFooter .container-fluid .container .row .col-md-4 .btnAbout {
-      background: #F57E57;
-      padding: 13.5px 30px;
-      font-weight: 500;
-      border: transparent;
-      position: absolute;
-      bottom: 15px;
-      font-size: 18px;
-      right: 0; }
+    font-family: "Lato", Helvetica, Arial, sans-serif; }
+    #about .aboutFooter .container-fluid {
+      background: #038EAF; }
+      #about .aboutFooter .container-fluid .container .col-md-12 .row {
+        padding-top: 60px;
+        padding-bottom: 30px; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4 h5 {
+          padding-bottom: 10px;
+          font-size: 20px;
+          color: #FFF;
+          font-weight: 500; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:first-child .container-fluid ul {
+          padding: 28% 0; }
+          #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:first-child .container-fluid ul li {
+            list-style: none;
+            font-size: 18px;
+            float: left;
+            color: #868686;
+            margin-right: 15px;
+            background: white;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 100%; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:first-child .container-fluid p {
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 0.04em;
+          color: rgba(255, 255, 255, 0.5); }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(2) a {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 400; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(2) .infoDemo {
+          color: #F57E57;
+          font-size: 15px; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(2) span {
+          padding: 10px 0px;
+          color: #F57E57;
+          padding-right: 10px;
+          font-size: 1.4em; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(3) p {
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.2);
+          padding-bottom: 16px; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(3) .aboutForm {
+          padding: 20px 0;
+          position: relative; }
+        #about .aboutFooter .container-fluid .container .col-md-12 .row .col-md-4:nth-child(3) .btnAbout {
+          background: #F57E57;
+          padding: 8.5px 30px;
+          font-weight: 500;
+          border: transparent;
+          position: absolute;
+          bottom: 15px;
+          font-size: 18px;
+          right: 0; }
 
 .dotActive {
   border-radius: 100%;
