@@ -1,7 +1,3 @@
-.wrapper {
-  margin: 0 auto;
-  width: 960px; }
-
 .paddingAdd {
   padding-left: 60px; }
 
@@ -58,13 +54,30 @@ body {
   #about .contactTop {
     padding-top: 35px;
     padding-bottom: 5px; }
+    #about .contactTop .navbar-toggle .icon-dot {
+      display: block;
+      width: 5px;
+      height: 5px;
+      position: relative;
+      top: -14px;
+      margin-top: 4px;
+      background: black;
+      border-radius: 100%; }
+    #about .contactTop .container .row .collapseMain {
+      position: absolute;
+      z-index: 220;
+      right: 0;
+      top: 25%;
+      width: 295px;
+      background: #fff;
+      box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.15); }
     #about .contactTop .container .row .col-md-3 span {
       margin-right: 10px; }
       #about .contactTop .container .row .col-md-3 span a {
         color: #333333;
         font-weight: 400;
         line-height: 26px;
-        font-size: 1.1em; }
+        font-size: 1em; }
       #about .contactTop .container .row .col-md-3 span i {
         color: #18AFD3; }
       #about .contactTop .container .row .col-md-3 span:first-child {
@@ -126,17 +139,17 @@ body {
           float: left;
           line-height: 100%;
           cursor: pointer;
-          padding: 21px 24px;
+          padding: 1.25em 1.45em;
           font-weight: 900;
-          font-size: 1.26em;
+          font-size: 1.23em;
           position: relative; }
           #about .aboutNav .container .row .navBar ul li .activeNav {
             background: #F57E57; }
           #about .aboutNav .container .row .navBar ul li .navSearch {
-            font-size: .9em;
+            font-size: .7em;
             position: absolute;
-            right: 15px;
-            top: 3px;
+            right: 20px;
+            top: 8px;
             color: #fff;
             padding: 15px 0; }
           #about .aboutNav .container .row .navBar ul li ul.drop-down {
@@ -238,11 +251,11 @@ body {
         #about .aboutContent .aboutModern ul li .iconArrow {
           color: #E5E5E5; }
       #about .aboutContent .aboutModern h1 {
-        font-family: 'PT Sans', sans-serif;
         padding-top: 7%;
         color: white;
-        font-weight: 500;
-        font-size: 80px;
+        letter-spacing: 0.06em;
+        font-weight: 400;
+        font-size: 5.8em;
         line-height: 1.85; }
   #about .aboutUs .container .row {
     padding: 50px 0;
@@ -488,5 +501,46 @@ body {
   background: rgba(24, 175, 211, 0.22); }
 
 /*about end*/
+@media (max-width: 1200px) {
+  /* screen size until 1200px */
+  body {
+    font-size: 1.5em;
+    /* 1.5x default size */ }
+
+  .brandNav {
+    width: 41.66666667%; }
+
+  .topAddres {
+    width: 33.33333333%; }
+
+  .navBar ul li {
+    padding: 1.25em 1em; }
+    .navBar ul li a {
+      font-size: .5em; }
+
+  .collapseMain {
+    display: none; } }
+@media (max-width: 992px) {
+  /* screen size until 1000px */
+  body {
+    font-size: 1.2em;
+    /* 1.2x default size */ }
+
+  .brandNav {
+    width: 50%; }
+
+  .topAddres {
+    width: 100%; } }
+@media (max-width: 768) {
+  body {
+    font-size: 0.7em; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  /* screen size until 500px */
+  body {
+    font-size: 0.8em;
+    /* 0.8x default size */ }
+
+  .navbar-toggle {
+    display: block; } }
 
 /*# sourceMappingURL=about-css.css.map */
